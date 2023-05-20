@@ -1,7 +1,8 @@
 - name: Install server
   hosts: server
+  become: yes
   roles:
-    - geerlingguy.firewall
     - geerlingguy.security
+    - geerlingguy.firewall
     - geerlingguy.docker
 
