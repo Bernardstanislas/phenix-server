@@ -1,0 +1,24 @@
+---
+- name: Add the LTSP PPA repository
+  apt_repository:
+    repo: ppa:ltsp
+
+- name: Install the recommanded packages
+  apt:
+    name:
+      - ltsp
+      - ltsp-binaries
+      - dnsmasq
+      - nfs-kernel-server
+      - squashfs-tools
+      - ethtool
+      - net-tools
+      - epoptes
+    install_recommends: yes
+
+- name: Add epoptes to the administrator group
+  user:
+    name: epoptes
+    groups: "{{ ansible_user }}"
+    append: yes
+

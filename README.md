@@ -41,3 +41,8 @@ ansible-playbook -i inventory playbook.yaml
 
 This provisioning starts with a plain Ubuntu 22 server edition.
 
+# Questions left to answer
+
+[ ] Is the Ubuntu Server, with a graphical user interface, the good choice compared to Ubuntu Desktop?
+[ ] How does the networking work? Is there a single NIC? Are there multiple? This will impact the LTSP installation
+

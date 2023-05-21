@@ -5,4 +5,5 @@
     - geerlingguy.security
     - geerlingguy.firewall
     - geerlingguy.docker
+    - ltsp
 
