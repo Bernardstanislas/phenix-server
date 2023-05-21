@@ -45,4 +45,5 @@ This provisioning starts with a plain Ubuntu 22 server edition.
 
 [ ] Is the Ubuntu Server, with a graphical user interface, the good choice compared to Ubuntu Desktop?
 [ ] How does the networking work? Is there a single NIC? Are there multiple? This will impact the LTSP installation
+[ ] What disto to use for the client image? Same as the server with a chroot? A very lightweight one? See http://ltsp.org/docs/installation/#maintaining-a-client-image
 
