@@ -6,4 +6,4 @@
     - geerlingguy.firewall
     - geerlingguy.docker
     - ltsp
-
+    - desktop

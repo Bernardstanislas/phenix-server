@@ -1,0 +1,10 @@
+---
+- name: Install the xfce4 metapackage
+  apt:
+    name: xfce4
+    install_recommends: yes
+
+- name: Install a desktop manager
+  apt:
+    name: sddm
+    install_recommends: yes
