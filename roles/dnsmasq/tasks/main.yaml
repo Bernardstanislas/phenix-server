@@ -1,0 +1,10 @@
+---
+- name: Setup dnsmasq for LTSP
+  template:
+    src: ltsp-dnsmasq.conf
+    dest: /etc/dnsmasq.d/ltsp-dnsmasq.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - Restart dnsmasq

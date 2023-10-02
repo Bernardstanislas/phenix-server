@@ -1,0 +1,13 @@
+---
+- name: Create the exports.d forlder
+  file:
+    path: /etc/exports.d
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Setup NFS for LTSP
+  command: ltsp nfs
+  args:
+    creates: /etc/exports.d/ltsp-nfs.exports
