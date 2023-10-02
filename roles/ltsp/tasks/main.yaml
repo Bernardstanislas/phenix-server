@@ -3,7 +3,7 @@
   apt_repository:
     repo: ppa:ltsp
 
-- name: Install the recommanded packages
+- name: Install the recommended packages
   apt:
     name:
       - ltsp
@@ -22,3 +22,5 @@
     groups: "{{ ansible_user }}"
     append: yes
 
+- name: Install the chroot
+  include_tasks: chroot.yaml

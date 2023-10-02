@@ -1,0 +1,9 @@
+---
+- name: Install the debootstrap package
+  apt:
+    name: debootstrap
+
+- name: Bootstrap the chroot
+  command: debootstrap jammy /srv/ltsp/jammy
+  args:
+    creates: /srv/ltsp/jammy/etc/lsb-release
