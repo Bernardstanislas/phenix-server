@@ -3,7 +3,6 @@
   become: yes
   roles:
     - geerlingguy.security
-    - geerlingguy.firewall
     - geerlingguy.docker
     - ltsp
     - desktop
