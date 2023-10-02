@@ -24,3 +24,32 @@
 
 - name: Install the chroot
   include_tasks: chroot.yaml
+
+- name: Create the image
+  command: ltsp image jammy
+  args:
+    creates: /srv/ltsp/images/jammy.img
+
+- name: Create the ipxe
+  command: ltsp ipxe
+  args:
+    creates: /srv/tftp/ltsp/ltsp.ipxe
+
+- name: Make sure the /etc/ltsp/bin directory exists
+  file:
+    path: /etc/ltsp/bin
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Copy the sshfs file
+  copy:
+    src: /usr/bin/sshfs
+    dest: /etc/ltsp/bin/sshfs-x86_64
+    owner: root
+    group: root
+    mode: 0755
+    remote_src: yes
+  notify:
+    - Update LTFS initrd

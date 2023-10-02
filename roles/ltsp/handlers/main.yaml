@@ -1,0 +1,3 @@
+---
+- name: Update LTSP initrd
+  command: ltsp initrd
