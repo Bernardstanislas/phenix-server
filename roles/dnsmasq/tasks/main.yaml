@@ -1,4 +1,22 @@
 ---
+- name: Configure resolved.conf
+  template:
+    src: resolved.conf
+    dest: /etc/systemd/resolved.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - Restart dnsmasq
+
+- name: Symlink resolv.conf
+  file:
+    src: /run/systemd/resolve/resolv.conf
+    dest: /etc/resolv.conf
+    state: link
+  notify:
+    - Restart dnsmasq
+
 - name: Setup dnsmasq for LTSP
   template:
     src: ltsp-dnsmasq.conf
