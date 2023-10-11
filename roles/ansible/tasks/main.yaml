@@ -1,0 +1,16 @@
+---
+- name: Install pip
+  apt:
+    name: python3-pip
+
+- name: Install Ansible with pip
+  pip:
+    name: ansible
+
+- name: Copy provisioning repository to server
+  copy:
+    src: "{{ playbook_dir }}/"
+    dest: "{{ provisioning_path }}"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: 0644

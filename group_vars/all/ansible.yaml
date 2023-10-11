@@ -1,4 +1,4 @@
 ---
 
 ansible_user: codephoenix
-
+provisioning_path: /home/{{ ansible_user }}/.provisioning

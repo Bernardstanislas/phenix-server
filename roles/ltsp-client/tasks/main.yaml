@@ -1,0 +1,9 @@
+---
+- name: Add the LTSP PPA repository
+  apt_repository:
+    repo: ppa:ltsp
+
+- name: Install the recommended packages
+  apt:
+    name:
+      - ltsp

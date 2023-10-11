@@ -1,0 +1,2 @@
+[chroot]
+/srv/ltsp/jammy ansible_connection=chroot

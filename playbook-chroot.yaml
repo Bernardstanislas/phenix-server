@@ -1,0 +1,5 @@
+- name: Install chroot
+  hosts: chroot
+  become: yes
+  roles:
+    - ltsp-client

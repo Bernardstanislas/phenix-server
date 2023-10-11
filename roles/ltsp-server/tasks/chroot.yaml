@@ -1,0 +1,19 @@
+---
+- name: Install the debootstrap package
+  apt:
+    name: debootstrap
+
+- name: Bootstrap the chroot
+  command: debootstrap jammy /srv/ltsp/jammy
+  args:
+    creates: /srv/ltsp/jammy/etc/lsb-release
+
+- name: Execute light client ansible playbook
+  command: ansible-playbook -i chroot_inventory playbook-chroot.yaml
+  args:
+    chdir: "{{ provisioning_path }}"
+  register: light_client_playbook
+
+- name: Print out light client playbook output
+  debug:
+    msg: "{{ light_client_playbook.stdout }}"

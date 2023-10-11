@@ -4,7 +4,8 @@
   roles:
     - geerlingguy.security
     - geerlingguy.docker
-    - ltsp
     - desktop
+    - ansible
+    - ltsp-server
     - dnsmasq
     - nfs
