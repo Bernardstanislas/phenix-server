@@ -1,5 +1,5 @@
 ---
-- name: Create the exports.d forlder
+- name: Create the exports.d folder
   file:
     path: /etc/exports.d
     state: directory

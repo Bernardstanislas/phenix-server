@@ -29,11 +29,15 @@
   command: ltsp image jammy
   args:
     creates: /srv/ltsp/images/jammy.img
+  notify:
+    - Update LTFS initrd
 
 - name: Create the ipxe
   command: ltsp ipxe
   args:
     creates: /srv/tftp/ltsp/ltsp.ipxe
+  notify:
+    - Update LTFS initrd
 
 - name: Make sure the /etc/ltsp/bin directory exists
   file:
@@ -42,6 +46,8 @@
     owner: root
     group: root
     mode: 0755
+  notify:
+    - Update LTFS initrd
 
 - name: Copy the sshfs file
   copy:
