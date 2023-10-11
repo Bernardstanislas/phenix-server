@@ -6,6 +6,8 @@
     - geerlingguy.docker
     - desktop
     - ansible
-    - ltsp-server
+    - ltsp
+    - chroot
+    - configure-ltsp
     - dnsmasq
     - nfs

@@ -3,17 +3,25 @@
   apt:
     name: debootstrap
 
+- name: Make sure the /srv/ltsp directory exists
+  file:
+    path: /srv/ltsp
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
 - name: Bootstrap the chroot
   command: debootstrap jammy /srv/ltsp/jammy
   args:
     creates: /srv/ltsp/jammy/etc/lsb-release
 
-- name: Execute light client ansible playbook
+- name: Execute chroot ansible playbook
   command: ansible-playbook -i chroot_inventory playbook-chroot.yaml
   args:
     chdir: "{{ provisioning_path }}"
-  register: light_client_playbook
+  register: chroot_playbook
 
-- name: Print out light client playbook output
+- name: Print out chroot playbook output
   debug:
-    msg: "{{ light_client_playbook.stdout }}"
+    msg: "{{ chroot_playbook.stdout }}"

@@ -2,4 +2,5 @@
   hosts: chroot
   become: yes
   roles:
-    - ltsp-client
+    - ltsp
+    - desktop

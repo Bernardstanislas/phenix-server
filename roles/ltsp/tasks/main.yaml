@@ -3,7 +3,7 @@
   apt_repository:
     repo: ppa:ltsp
 
-- name: Install the recommended packages
+- name: Install the ltsp package
   apt:
     name:
       - ltsp
