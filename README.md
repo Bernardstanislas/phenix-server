@@ -45,18 +45,41 @@ In order to develop on this repository, you can use several virtual machines to 
 ## VirtualBox
 
 You can use VirtualBox to create a virtual machine, and then provision it as if it was the server.
+You'll later be able to create light clients with other virtual machines.
 
 Create a VirtualBox VM with the following settings:
-- network: bridged to a network adapter that has access to the internet
-- disk: enough to test your changes, 20GB should be enough
+- network: bridged to a network adapter that **has access to the internet**
+- disk: enough to test your changes, 50GB should be enough
 - RAM: 2GB should be enough
 - CPU: 2 cores should be enough
+- select the Ubuntu Server 22.04 iso
 
-Start by installing Ubuntu Server 22.04 in a VirtualBox VM, as described in the usage section.
-    
-Then, you can provision the VM as if it was the server. To be able to contact it from the host, you will need to have the network interface in bridge mode.
+Uncheck the "unserpervised installation" option, you'll need to configure the installation manually.
 
-# Questions left to answer
+Boot the VM, and follow the `Usage` section above to install the server.
 
-[ ] How does the networking work? Is there a single NIC? Are there multiple? This will impact the LTSP installation
-[ ] What distro to use for the client image? Same as the server with a chroot? A very lightweight one? See http://ltsp.org/docs/installation/#maintaining-a-client-image
+Once the server is provisioned, you need to make it run on a network where there is no DHCP server:
+- shut down the VM
+- go to the VM settings
+- go to the network tab
+- select the network adapter
+- select "Bridge Adapter" in the "attached to" dropdown
+- select the network adapter that has access to the internet (unplug the cable if you need to)
+- click on "advanced"
+- select "Allow all" in the "Promiscuous Mode" dropdown
+- now boot the VM, it will get stuck for a few minutes on network configuration, but it will eventually boot
+- run `ifconfig` to get the name of your network adapter (it will look like `enp0s3`)
+- run `sudo ifconfig enp0s3 inet 192.168.67.1 netmask 255.255.255.0` (replace `enp0s3` with the name of your network adapter)
+
+You can now create light clients on the same network:
+- create a new VM without any iso nor any disk
+- in the boot order, select "Network" first
+- go to the network tab
+- select the network adapter
+- select "Bridge Adapter" in the "attached to" dropdown
+- select the same network adapter as the server VM
+- click on "advanced"
+- select "Allow all" in the "Promiscuous Mode" dropdown
+- boot the VM
+
+It will now boot with iPXE, and will try to boot from the network. It will get an IP address from the server `dnsmasq` service, and will boot from the server.
