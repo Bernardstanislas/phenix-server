@@ -14,21 +14,19 @@ ansible-galaxy install -r requirements.yaml
 
 Install the server from the Ubuntu Server 22.04 iso.
 
+Choose regualar Ubuntu server over minimized version.
+
+Check "Install OpenSSH server", and add a SSH identity from your Github handle.
+
+Check "Allow password authentication" over SSH.
+
 Define a user during the installation wizard, report the username in the `group_vars/all/ansible.yaml` file.
 
-Tell the installer to install the OpenSSH server, and nothing else.
+Do not choose any additional software to be installed.
 
-Also specify your Github handle in order to get your public key from Github copied into the installed system.
+Launch the installation.
 
-Once the installation is finished, log into the server, and add the user to the sudoers users:
-
-```bash
-sudo usermod -aG sudo username
-```
-
-Add your public SSH key to the `~/.ssh/authorized_keys` file if it was not already put in place during the Ubuntu installtion.
-
-Last thing to adapt, the server IP address. Report it in the `inventory` file.
+Once the installation is done, log in the server, and get the server IP address with `ip addr`. Report it in the `inventory` file.
 
 The machine is now ready to be provisioned, you can now run from the host machine:
 
