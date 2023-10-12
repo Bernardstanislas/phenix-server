@@ -2,5 +2,7 @@
   hosts: chroot
   become: yes
   roles:
+    - linux-kernel
+    - hostname
     - ltsp
     - desktop

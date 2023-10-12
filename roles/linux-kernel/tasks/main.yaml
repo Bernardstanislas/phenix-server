@@ -1,0 +1,10 @@
+---
+- name: Add universe repository
+  apt_repository:
+    repo: "deb http://archive.ubuntu.com/ubuntu/ jammy universe"
+
+- name: Install kernel packages
+  apt:
+    name:
+      - linux-generic
+      - initramfs-tools
