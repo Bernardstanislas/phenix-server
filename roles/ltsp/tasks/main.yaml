@@ -1,4 +1,9 @@
 ---
+- name: Instal software-properties-common
+  apt:
+    name: software-properties-common
+    install_recommends: yes
+
 - name: Add the LTSP PPA repository
   apt_repository:
     repo: ppa:ltsp
