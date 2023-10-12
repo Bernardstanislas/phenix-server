@@ -7,6 +7,7 @@
     group: root
     mode: 0644
   notify:
+    - Restart systemd-resolved
     - Restart dnsmasq
 
 - name: Symlink resolv.conf
@@ -15,6 +16,7 @@
     dest: /etc/resolv.conf
     state: link
   notify:
+    - Restart systemd-resolved
     - Restart dnsmasq
 
 - name: Setup dnsmasq for LTSP

@@ -1,4 +1,9 @@
 ---
+- name: Restart systemd-resolved
+  service:
+    name: systemd-resolved
+    state: restarted
+
 - name: Restart dnsmasq
   service:
     name: dnsmasq
