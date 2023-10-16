@@ -11,3 +11,5 @@
     - configure-ltsp
     - dnsmasq
     - nfs
+    - role: netplan
+      tags: netplan

@@ -1,0 +1,31 @@
+---
+- name: Make sure the netplan config directory exists
+  file:
+    path: /etc/netplan
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Debug ansible_interfaces
+  debug:
+    msg: Please define the `intranet_interface` variable in the group_vars/all/network.yaml file
+  failed_when: intranet_interface is not defined
+  when: intranet_interface is not defined
+
+- name: Remove any other netplan config
+  file:
+    path: /etc/netplan/00-installer-config.yaml
+    state: absent
+  notify:
+    - Apply netplan config
+
+- name: Copy the netplan config file template
+  template:
+    src: 01-netcfg.yaml
+    dest: /etc/netplan/01-netcfg.yaml
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - Apply netplan config

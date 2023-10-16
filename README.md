@@ -28,6 +28,12 @@ Launch the installation.
 
 Once the installation is done, log in the server, and get the server IP address with `ip addr`. Report it in the `inventory` file.
 
+Get the network interfaces names with the `ip link` command, and report them in the `group_vars/all/network.yaml` file.
+
+You can ignore further modifications to these two files:
+- `git update-index --skip-worktree inventory`
+- `git update-index --skip-worktree group_vars/all/network.yaml`
+
 The machine is now ready to be provisioned, you can now run from the host machine:
 
 ```bash

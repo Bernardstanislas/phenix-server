@@ -1,0 +1,6 @@
+---
+# Network interface connected to the light clients, uncomment and set to the value returned by `ip link`:
+# intranet_interface: eth0
+
+# You can also define an interface connected to the internet, uncomment and set to the value returned by `ip link`:
+# internet_interface: eth1

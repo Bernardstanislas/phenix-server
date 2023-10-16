@@ -1,0 +1,16 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    {{ intranet_interface }}:
+      dhcp4: false
+      dhcp6: false
+      optional: true
+      addresses:
+        - 192.168.67.1/24
+    {% if internet_interface is defined %}
+    {{- internet_interface -}}:
+      dhcp4: true
+      dhcp6: false
+      optional: true
+    {% endif %}
