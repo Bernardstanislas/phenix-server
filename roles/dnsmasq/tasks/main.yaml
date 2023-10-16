@@ -18,6 +18,7 @@
   notify:
     - Restart systemd-resolved
     - Restart dnsmasq
+    - Update LTSP client
 
 - name: Setup dnsmasq for LTSP
   template:
@@ -28,3 +29,14 @@
     mode: 0644
   notify:
     - Restart dnsmasq
+
+- name: Setup dnsmasq for webserver
+  template:
+    src: home-dnsmasq.conf
+    dest: /etc/dnsmasq.d/home-dnsmasq.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - Restart dnsmasq
+    - Update LTSP client

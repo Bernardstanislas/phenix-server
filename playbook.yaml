@@ -5,11 +5,25 @@
     - geerlingguy.security
     - geerlingguy.docker
     - desktop
-    - ansible
-    - ltsp
-    - chroot
-    - configure-ltsp
-    - dnsmasq
+    - name: ansible
+      tags:
+        - light-client
+    - name: ltsp
+      tags:
+        - ltsp
+    - name: chroot
+      tags:
+        - light-client
+    - role: configure-ltsp
+      tags:
+        - configure-ltsp
+        - ltsp
+    - role: dnsmasq
+      tags:
+        - webserver
+        - dhcp
     - nfs
     - role: netplan
       tags: netplan
+    - role: nginx
+      tags: webserver

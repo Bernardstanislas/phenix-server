@@ -1,3 +1,31 @@
 ---
+- name: Make sure the /etc/ltsp/bin directory exists
+  file:
+    path: /etc/ltsp/bin
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+  listen: Update LTSP client
+
+- name: Copy the sshfs file
+  copy:
+    src: /usr/bin/sshfs
+    dest: /etc/ltsp/bin/sshfs-x86_64
+    owner: root
+    group: root
+    mode: 0755
+    remote_src: yes
+  listen: Update LTSP client
+
+- name: Create the image
+  command: ltsp image jammy
+  listen: Update LTSP client
+
 - name: Update LTSP initrd
   command: ltsp initrd
+  listen: Update LTSP client
+
+- name: Create the ipxe
+  command: ltsp ipxe
+  listen: Update LTSP client

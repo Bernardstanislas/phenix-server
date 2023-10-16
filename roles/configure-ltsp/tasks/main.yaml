@@ -18,47 +18,11 @@
     append: yes
 
 - name: Copy the ltsp.conf file template
-  copy:
-    src: /usr/share/ltsp/common/ltsp/ltsp.conf
+  template:
+    src: ltsp.conf
     dest: /etc/ltsp/ltsp.conf
     owner: root
     group: root
     mode: 0644
-    remote_src: yes
-  notify:
-    - Update LTSP initrd
-
-- name: Create the image
-  command: ltsp image jammy
-  args:
-    creates: /srv/ltsp/images/jammy.img
-  notify:
-    - Update LTSP initrd
-
-- name: Create the ipxe
-  command: ltsp ipxe
-  args:
-    creates: /srv/tftp/ltsp/ltsp.ipxe
-  notify:
-    - Update LTSP initrd
-
-- name: Make sure the /etc/ltsp/bin directory exists
-  file:
-    path: /etc/ltsp/bin
-    state: directory
-    owner: root
-    group: root
-    mode: 0755
-  notify:
-    - Update LTSP initrd
-
-- name: Copy the sshfs file
-  copy:
-    src: /usr/bin/sshfs
-    dest: /etc/ltsp/bin/sshfs-x86_64
-    owner: root
-    group: root
-    mode: 0755
-    remote_src: yes
   notify:
     - Update LTSP initrd
