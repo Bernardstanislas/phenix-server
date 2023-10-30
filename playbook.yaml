@@ -22,8 +22,12 @@
       tags:
         - webserver
         - dhcp
-    - nfs
+    - role: nfs
+      tags:
+        - nfs
     - role: netplan
-      tags: netplan
+      tags:
+        - netplan
     - role: nginx
-      tags: webserver
+      tags:
+        - webserver

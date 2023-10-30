@@ -1,7 +1,13 @@
 ---
-- name: Add universe repository
+- name: Add universe repository (x86_64)
   apt_repository:
     repo: "deb http://archive.ubuntu.com/ubuntu/ jammy universe"
+  when: ansible_architecture == "x86_64"
+
+- name: Add universe repository (aarch64)
+  apt_repository:
+    repo: "deb http://ports.ubuntu.com/ubuntu-ports/ jammy universe"
+  when: ansible_architecture == "aarch64"
 
 - name: Install kernel packages
   apt:
