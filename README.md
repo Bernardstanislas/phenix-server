@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/banner.png" width="600" />
+</p>
+
 Provisioning for the CodePhoenix server.
 
 # Prerequisites
