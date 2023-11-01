@@ -30,9 +30,12 @@ Do not choose any additional software to be installed.
 
 Launch the installation.
 
-Once the installation is done, log in the server, and get the server IP address with `ip addr`. Report it in the `inventory` file.
+Once the installation is done and you have successfully rebooted, you need to setup few variables before running the playbook.
 
-Get the network interfaces names with the `ip link` command, and report them in the `group_vars/all/network.yaml` file.
+Log in the server, and get the network configuration with `ip addr`:
+- report the server ip address in the `inventory` file
+- report the server ip address as the `server_ip` variable inside the `group_vars/all/network.yaml` file
+- report the network interfaces names in the `group_vars/all/network.yaml` file
 
 You can ignore further modifications to these two files:
 - `git update-index --skip-worktree inventory`
