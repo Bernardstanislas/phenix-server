@@ -21,7 +21,7 @@
   args:
     chdir: "{{ provisioning_path }}"
   register: chroot_playbook
-  changed_when: chroot_playbook.stdout  is regex("change=([1-9][0-9]*)")
+  changed_when: chroot_playbook.stdout  is regex("changed=([1-9][0-9]*)")
   notify:
     - Update LTSP client
 
