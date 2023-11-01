@@ -21,7 +21,7 @@
 - name: Add service domain to hosts file
   lineinfile:
     path: /etc/hosts
-    line: "{{ server_ip }} {{ service.domain }}.{{ domain}}"
+    line: "{{ intranet_ip }} {{ service.domain }}.{{ domain}}"
   loop: "{{ services }}"
   loop_control:
     loop_var: service

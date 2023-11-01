@@ -1,6 +1,12 @@
 ---
+# If your server is connected to a internet network, it will be given a dynamic IP address by the router
+# If so, uncomment the following line and set it to the IP address of your server on the internet network:
+# local_network_server_ip:
+
 # Network interface connected to the light clients, uncomment and set to the value returned by `ip link`:
 # intranet_interface: eth0
 
 # You can also define an interface connected to the internet, uncomment and set to the value returned by `ip link`:
 # internet_interface: eth1
+
+intranet_ip: "{{ local_network_server_ip if (local_network_server_ip is defined and intranet_interface is not defined) else '192.168.67.1' }}"
