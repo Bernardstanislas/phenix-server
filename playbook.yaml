@@ -31,3 +31,6 @@
     - role: nginx
       tags:
         - webserver
+    - role: mysql-server
+      tags:
+        - webserver
