@@ -7,10 +7,25 @@
   pip:
     name: ansible
 
-- name: Copy provisioning repository to server
-  copy:
-    src: "{{ playbook_dir }}/"
-    dest: "{{ provisioning_path }}"
+- name: Make sure provisioning_path exists
+  file:
+    path: "{{ provisioning_path }}"
+    state: directory
     owner: "{{ ansible_user }}"
     group: "{{ ansible_user }}"
-    mode: 0644
+
+- name: Copy provisioning repository to server
+  copy:
+    src: "{{ playbook_dir }}/{{ item }}"
+    dest: "{{ provisioning_path }}/{{ item }}"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+  loop:
+    - roles/linux-kernel/
+    - roles/hostname/
+    - roles/ltsp/
+    - roles/desktop/
+    - roles/dev-tools/
+    - ansible.cfg
+    - chroot_inventory
+    - playbook-chroot.yaml
