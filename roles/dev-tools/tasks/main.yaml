@@ -18,8 +18,17 @@
     creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
 
 - name: Add the Mozilla PPA repository
-  apt_repository:
-    repo: ppa:mozillateam/ppa
+  block:
+    - apt_repository:
+        repo: ppa:mozillateam/ppa
+    - template:
+        src: mozillateamppa
+        dest: /etc/apt/preferences.d/mozillateamppa
+    - template:
+        src: 51unattended-upgrades-firefox
+        dest: /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+  notify:
+    - Update apt cache
 
 - name: Add the Google Chrome repository
   block:
@@ -61,6 +70,15 @@
         repo: deb [arch=amd64 signed-by=/etc/apt/keyrings/typora.asc] https://typora.io/linux ./
         filename: typora
 
+- name: Add Yarn repository
+  block:
+    - get_url:
+        url: https://dl.yarnpkg.com/debian/pubkey.gpg
+        dest: /etc/apt/keyrings/yarn.asc
+    - apt_repository:
+        repo: deb [signed-by=/etc/apt/keyrings/yarn.asc] https://dl.yarnpkg.com/debian/ stable main
+        filename: yarn
+
 - name: Install graphical apps
   apt:
     name:
@@ -74,3 +92,21 @@
       - code
       - sublime-text
       - typora
+
+- name: Install dev tools
+  apt:
+    name:
+      - yarn
+      - python3
+      - python3-pip
+      - python-is-python3
+      - btop
+      - logrotate
+      - mysql-client
+    install_recommends: no
+
+- name: Install lazygit
+  unarchive:
+    src: "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_0.40.2_Linux_x86_64.tar.gz"
+    remote_src: yes
+    dest: /usr/local/bin
