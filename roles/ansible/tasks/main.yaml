@@ -21,11 +21,13 @@
     owner: "{{ ansible_user }}"
     group: "{{ ansible_user }}"
   loop:
+    - group_vars/
     - roles/linux-kernel/
     - roles/hostname/
     - roles/ltsp/
     - roles/desktop/
     - roles/dev-tools/
+    - roles/epoptes/
     - ansible.cfg
     - chroot_inventory
     - playbook-chroot.yaml

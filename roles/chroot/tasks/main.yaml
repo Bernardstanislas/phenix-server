@@ -28,3 +28,4 @@
 - name: Print out chroot playbook output
   debug:
     msg: "{{ chroot_playbook.stdout }}"
+  changed_when: chroot_playbook.changed

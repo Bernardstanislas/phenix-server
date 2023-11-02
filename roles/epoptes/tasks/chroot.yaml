@@ -1,0 +1,11 @@
+---
+- name: Install the epoptes client
+  apt:
+    name: epoptes-client
+
+- name: Add the server to the /etc/hosts
+  lineinfile:
+    path: /etc/hosts
+    line: "{{ intranet_ip }} server"
+  notify:
+    - Fetch SSL certificate

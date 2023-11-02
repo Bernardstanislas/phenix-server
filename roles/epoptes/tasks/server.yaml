@@ -1,0 +1,10 @@
+---
+- name: Install the epoptes server
+  apt:
+    name: epoptes
+
+- name: Add the user to the epoptes group
+  user:
+    name: "{{ ansible_user }}"
+    groups: epoptes
+    append: yes

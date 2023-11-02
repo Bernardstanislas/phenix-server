@@ -34,3 +34,6 @@
     - role: mysql-server
       tags:
         - webserver
+    - role: epoptes
+      tags:
+        - light-client

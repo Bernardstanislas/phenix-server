@@ -1,0 +1,8 @@
+---
+- name: Proceed to the server tasks
+  include_tasks: server.yaml
+  when: not in_chroot
+
+- name: Proceed to the chroot tasks
+  include_tasks: chroot.yaml
+  when: in_chroot
