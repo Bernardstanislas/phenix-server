@@ -114,6 +114,7 @@
       - btop
       - logrotate
       - mysql-client
+      - terminator
     install_recommends: no
 
 - name: Install lazygit
