@@ -79,6 +79,16 @@
         repo: deb [signed-by=/etc/apt/keyrings/yarn.asc] https://dl.yarnpkg.com/debian/ stable main
         filename: yarn
 
+- name: Add TablePlus repository
+  block:
+    - name: Add the TablePlus gpg key
+      get_url:
+        url: https://deb.tableplus.com/apt.tableplus.com.gpg.key
+        dest: /etc/apt/keyrings/tableplus.asc
+    - name: Add the TablePlus repository
+      apt_repository:
+        repo: deb [arch=amd64 signed-by=/etc/apt/keyrings/tableplus.asc] https://deb.tableplus.com/debian/22 tableplus main
+
 - name: Install graphical apps
   apt:
     name:
@@ -92,6 +102,7 @@
       - code
       - sublime-text
       - typora
+      - tableplus
 
 - name: Install dev tools
   apt:
