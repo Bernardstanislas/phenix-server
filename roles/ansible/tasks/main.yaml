@@ -28,6 +28,7 @@
     - roles/desktop/
     - roles/dev-tools/
     - roles/epoptes/
+    - roles/ssl/
     - ansible.cfg
     - chroot_inventory
     - playbook-chroot.yaml

@@ -1,0 +1,14 @@
+---
+- name: Proceed to the server tasks
+  include_tasks: server.yaml
+  when: not in_chroot
+
+- name: Trust the server CA certificate
+  copy:
+    src: /etc/ssl/certs/ca-certificate.pem
+    dest: /usr/local/share/ca-certificates/server.crt
+    owner: root
+    group: root
+    mode: 0644
+    remote_src: "{{ not in_chroot }}"
+  notify: Update CA certificates

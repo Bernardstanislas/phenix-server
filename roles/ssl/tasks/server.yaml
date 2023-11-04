@@ -1,0 +1,54 @@
+---
+- name: Check if there is already a private key
+  stat:
+    path: /etc/ssl/private/ca-certificate.key
+  register: private_key
+
+- name: Generate a server private key
+  openssl_privatekey:
+    path: /etc/ssl/private/ca-certificate.key
+  when: not private_key.stat.exists
+
+- name: Generate a CA CSR
+  openssl_csr:
+    path: /etc/ssl/certs/ca-certificate.csr
+    privatekey_path: /etc/ssl/private/ca-certificate.key
+    common_name: CodePhoenix
+    use_common_name_for_san: false
+    basic_constraints:
+      - 'CA:TRUE'
+    basic_constraints_critical: true
+    key_usage:
+      - keyCertSign
+    key_usage_critical: true
+    subject_alt_name: "DNS:*.{{ domain }},DNS:{{ domain }}"
+
+- name: Generate a self-signed CA certificate
+  openssl_certificate:
+    path: /etc/ssl/certs/ca-certificate.pem
+    privatekey_path: /etc/ssl/private/ca-certificate.key
+    csr_path: /etc/ssl/certs/ca-certificate.csr
+    provider: selfsigned
+
+- name: Create a private key for web certificates
+  openssl_privatekey:
+    path: /etc/ssl/private/web.key
+
+- name: Create certificate signing request (CSR) for new certificate
+  openssl_csr:
+    path: /etc/ssl/certs/web.csr
+    privatekey_path: /etc/ssl/private/web.key
+    common_name: "*.{{ domain }}"
+    basic_constraints:
+      - 'CA:FALSE'
+    subject_alt_name: "DNS:*.{{ domain }},DNS:{{ domain }}"
+
+- name: Sign certificate with our own CA
+  community.crypto.x509_certificate:
+    provider: ownca
+    path: /etc/ssl/certs/web.crt
+    csr_path: /etc/ssl/certs/web.csr
+    ownca_path: /etc/ssl/certs/ca-certificate.pem
+    ownca_privatekey_path: /etc/ssl/private/ca-certificate.key
+    ownca_not_after: +3650d  # valid for ten years
+    ownca_not_before: "-1d"  # valid since yesterday

@@ -11,6 +11,10 @@
     - name: ltsp
       tags:
         - ltsp
+    - name: ssl
+      tags:
+        - webserver
+        - ssl
     - name: chroot
       tags:
         - light-client

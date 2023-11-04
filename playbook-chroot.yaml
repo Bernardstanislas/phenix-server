@@ -4,6 +4,7 @@
   roles:
     - linux-kernel
     - hostname
+    - ssl
     - ltsp
     - desktop
     - dev-tools
