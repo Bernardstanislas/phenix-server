@@ -1,0 +1,43 @@
+---
+- name: Install prerequesites
+  apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg
+      - tzdata
+      - perl
+
+- name: Add Gitlab repository
+  block:
+    - name: Add the Gitlab gpg key
+      get_url:
+        url: https://packages.gitlab.com/gitlab/gitlab-ce/gpgkey
+        dest: /etc/apt/keyrings/gitlab.asc
+    - name: Add the Gitlab repository
+      apt_repository:
+        repo: deb [signed-by=/etc/apt/keyrings/gitlab.asc] https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ jammy main
+
+- name: Install Gitlab
+  apt:
+    name: gitlab-ce
+  environment:
+    EXTERNAL_URL: "http://gitlab.{{ domain }}"
+
+- name: Add the Gitlab configuration file
+  template:
+    src: gitlab.rb
+    dest: /etc/gitlab/gitlab.rb
+  notify: Reconfigure gitlab
+
+- name: Configure Nginx
+  template:
+    src: gitlab.conf
+    dest: /etc/nginx/sites-enabled/gitlab.conf
+  notify: Restart nginx
+
+- name: Add gitlab to the /etc/hosts file
+  lineinfile:
+    path: /etc/hosts
+    line: "{{ intranet_ip }} gitlab.{{ domain}}"

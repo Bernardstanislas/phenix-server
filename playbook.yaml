@@ -37,3 +37,6 @@
     - role: epoptes
       tags:
         - light-client
+    - role: gitlab
+      tags:
+        - gitlab
