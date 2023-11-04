@@ -4,26 +4,3 @@
     name: nginx
   notify:
     - Restart Nginx
-
-- name: Configure web services
-  template:
-    src: site.conf
-    dest: "/etc/nginx/sites-enabled/{{ service.domain }}.conf"
-    owner: root
-    group: root
-    mode: 0644
-  loop: "{{ services }}"
-  loop_control:
-    loop_var: service
-  notify:
-    - Restart Nginx
-
-- name: Add service domain to hosts file
-  lineinfile:
-    path: /etc/hosts
-    line: "{{ intranet_ip }} {{ service.domain }}.{{ domain}}"
-  loop: "{{ services }}"
-  loop_control:
-    loop_var: service
-  notify:
-    - Restart Nginx
