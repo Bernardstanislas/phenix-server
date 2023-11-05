@@ -44,3 +44,7 @@
     - role: gitlab
       tags:
         - gitlab
+    - role: dev-tools
+    - role: certificates-in-browsers
+      tags:
+        - ssl

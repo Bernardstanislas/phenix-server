@@ -1,4 +1,8 @@
 ---
+- name: Install required packages
+  apt:
+    name: libnss3-tools
+
 - name: Check if there is already a private key
   stat:
     path: /etc/ssl/private/ca-certificate.key
@@ -13,7 +17,7 @@
   openssl_csr:
     path: /etc/ssl/certs/ca-certificate.csr
     privatekey_path: /etc/ssl/private/ca-certificate.key
-    common_name: CodePhoenix
+    common_name: "{{ root_ca_certificate.name }}"
     use_common_name_for_san: false
     basic_constraints:
       - 'CA:TRUE'

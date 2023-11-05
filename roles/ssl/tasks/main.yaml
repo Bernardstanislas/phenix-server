@@ -6,7 +6,7 @@
 - name: Trust the server CA certificate
   copy:
     src: /etc/ssl/certs/ca-certificate.pem
-    dest: /usr/local/share/ca-certificates/server.crt
+    dest: "{{ root_ca_certificate.path}}"
     owner: root
     group: root
     mode: 0644

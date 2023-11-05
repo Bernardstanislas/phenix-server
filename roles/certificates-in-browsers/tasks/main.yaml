@@ -1,0 +1,15 @@
+---
+- name: Create firefox profile
+  include_tasks: firefox.yaml
+  loop: "{{ all_users }}"
+  loop_control:
+    loop_var: user
+
+- name: Configure system
+  include_tasks: configure-system.yaml
+
+- name: Configure users
+  include_tasks: configure-users.yaml
+  loop: "{{ all_users }}"
+  loop_control:
+    loop_var: user

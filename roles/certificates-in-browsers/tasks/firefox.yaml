@@ -1,0 +1,12 @@
+---
+- name: Check if firefox directory exists
+  stat:
+    path: "/home/{{ user }}/.mozilla/firefox"
+  register: firefox_dir
+
+- name: Run firefox if no profiles exist
+  become: true
+  become_user: "{{ user }}"
+  command: timeout 10s firefox --headless
+  when: not firefox_dir.stat.exists
+  failed_when: false
