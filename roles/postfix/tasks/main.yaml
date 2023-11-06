@@ -1,0 +1,49 @@
+---
+- name: Install postfix
+  apt:
+    name: postfix
+
+- name: Configure postfix
+  template:
+    src: main.cf
+    dest: /etc/postfix/main.cf
+    owner: root
+    group: root
+    mode: 0644
+  notify: Restart Postfix
+
+- name: Setup aliases
+  template:
+    src: aliases
+    dest: /etc/aliases
+    owner: root
+    group: root
+    mode: 0644
+  notify: Update aliases
+
+- name: Create the maildirs
+  block:
+    - name: Create the new directory
+      file:
+        path: "/home/{{ user }}/Maildir/new"
+        state: directory
+      become_user: "{{ user }}"
+      loop: "{{ all_users }}"
+      loop_control:
+        loop_var: user
+    - name: Create the cur directory
+      file:
+        path: "/home/{{ user }}/Maildir/cur"
+        state: directory
+      become_user: "{{ user }}"
+      loop: "{{ all_users }}"
+      loop_control:
+        loop_var: user
+    - name: Create the tmp directory
+      file:
+        path: "/home/{{ user }}/Maildir/tmp"
+        state: directory
+      become_user: "{{ user }}"
+      loop: "{{ all_users }}"
+      loop_control:
+        loop_var: user

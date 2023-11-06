@@ -1,0 +1,3 @@
+{% for user in all_users %}
+{{ user }}: {{ user }}
+{% endfor %}

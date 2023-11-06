@@ -1,0 +1,7 @@
+myhostname = server.{{ domain }}
+mydestination = static:all
+mail_spool_directory = /var/mail/
+mynetworks = 127.0.0.0/8
+inet_interfaces = loopback-only
+local_transport = local
+home_mailbox = Maildir/

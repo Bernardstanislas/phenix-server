@@ -1,0 +1,9 @@
+---
+- name: Update aliases
+  command: newaliases
+
+- name: Restart Postfix
+  service:
+    name: postfix
+    state: restarted
+  listen: Update aliases

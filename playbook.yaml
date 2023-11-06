@@ -41,6 +41,9 @@
     - role: epoptes
       tags:
         - light-client
+    - role: postfix
+      tags:
+        - mail
     - role: gitlab
       tags:
         - gitlab
