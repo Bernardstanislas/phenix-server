@@ -5,6 +5,9 @@
     - geerlingguy.security
     - geerlingguy.docker
     - desktop
+    - role: netplan
+      tags:
+        - netplan
     - name: ansible
       tags:
         - light-client
@@ -29,9 +32,6 @@
     - role: nfs
       tags:
         - nfs
-    - role: netplan
-      tags:
-        - netplan
     - role: nginx
       tags:
         - webserver

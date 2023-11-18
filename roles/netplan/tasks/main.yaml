@@ -13,6 +13,21 @@
   failed_when: intranet_interface is not defined
   when: intranet_interface is not defined
 
+- name: List all config files in the directory
+  find:
+    paths: /etc/netplan
+    patterns: '*.yaml'
+  register: netplan_files
+
+- name: Remove any other netplan config
+  file:
+    path: "{{ item.path }}"
+    state: absent
+  with_items: "{{ netplan_files.files }}"
+  when: item.path != '/etc/netplan/01-netcfg.yaml'
+  notify:
+    - Apply netplan config
+
 - name: Remove any other netplan config
   file:
     path: /etc/netplan/00-installer-config.yaml
