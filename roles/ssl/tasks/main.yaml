@@ -12,3 +12,6 @@
     mode: 0644
     remote_src: "{{ not in_chroot }}"
   notify: Update CA certificates
+
+- name: Flush handlers
+  meta: flush_handlers

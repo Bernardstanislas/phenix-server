@@ -44,3 +44,6 @@
     mode: 0644
   notify:
     - Apply netplan config
+
+- name: Flush handlers
+  meta: flush_handlers

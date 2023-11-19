@@ -40,3 +40,6 @@
   notify:
     - Restart dnsmasq
     - Update LTSP client
+
+- name: Flush handlers
+  meta: flush_handlers

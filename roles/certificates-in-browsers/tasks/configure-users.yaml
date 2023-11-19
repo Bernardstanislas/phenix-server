@@ -47,3 +47,6 @@
   loop_control:
     loop_var: profile
   notify: Update LTSP initrd
+
+- name: Flush handlers
+  meta: flush_handlers

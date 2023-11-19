@@ -26,3 +26,6 @@
     mode: 0644
   notify:
     - Update LTSP initrd
+
+- name: Flush handlers
+  meta: flush_handlers

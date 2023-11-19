@@ -122,3 +122,6 @@
     src: "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_0.40.2_Linux_x86_64.tar.gz"
     remote_src: yes
     dest: /usr/local/bin
+
+- name: Flush handlers
+  meta: flush_handlers

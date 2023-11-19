@@ -9,3 +9,6 @@
     line: "{{ intranet_ip }} server"
   notify:
     - Fetch SSL certificate
+
+- name: Flush handlers
+  meta: flush_handlers
