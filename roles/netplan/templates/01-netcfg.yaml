@@ -1,18 +1,22 @@
 network:
   version: 2
   renderer: networkd
+  {% if network_interfaces.ethernet is defined -%}
   ethernets:
-    {% if intranet_interface is defined %}
-    {{- intranet_interface -}}:
+    {{ network_interfaces.ethernet.name }}:
       dhcp4: false
       dhcp6: false
       optional: true
       addresses:
         - {{ intranet_ip }}/24
-{% endif %}
-    {% if internet_interface is defined %}
-    {{- internet_interface -}}:
+  {%- endif -%}
+  {% if network_interfaces.wifi is defined +%}
+  wifis:
+    {{ network_interfaces.wifi.name }}:
       dhcp4: true
       dhcp6: false
       optional: true
-{% endif %}
+      access-points:
+        {{ network_interfaces.wifi.ssid }}:
+          password: {{ network_interfaces.wifi.password }}
+  {%- endif -%}

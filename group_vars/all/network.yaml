@@ -3,10 +3,17 @@
 # If so, uncomment the following line and set it to the IP address of your server on the internet network:
 # local_network_server_ip:
 
-# Network interface connected to the light clients, uncomment and set to the value returned by `ip link`:
-# intranet_interface: eth0
+# Read your network interfaces list with `ip `
+# Uncomment the following block and configure it to your needs
+# network_interfaces:
+#   ethernet:
+#     name: REPLACE_WITH_YOUR_ETHERNET_INTERFACE_NAME
+#   wifi:
+#     name: REPLACE_WITH_YOUR_WIFI_INTERFACE_NAME
+#     ssid: REPLACE_WITH_YOUR_WIFI_SSID
+#     password: REPLACE_WITH_YOUR_WIFI_PASSWORD
 
 # You can also define an interface connected to the internet, uncomment and set to the value returned by `ip link`:
 # internet_interface: eth1
 
-intranet_ip: "{{ local_network_server_ip if (local_network_server_ip is defined and intranet_interface is not defined) else '192.168.67.1' }}"
+intranet_ip: "{{ local_network_server_ip if (local_network_server_ip is defined and network_interfaces.ethernet is not defined) else '192.168.67.1' }}"
