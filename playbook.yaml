@@ -8,6 +8,9 @@
     - role: netplan
       tags:
         - netplan
+    - role: users
+      tags:
+        - users
     - name: ansible
       tags:
         - light-client

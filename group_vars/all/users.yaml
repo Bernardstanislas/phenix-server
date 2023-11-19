@@ -2,4 +2,4 @@
 students:
   - jeanjean
 
-all_users: "{{ students+ [ansible_user] | list }}"
+all_users: "{{ students + [ansible_user] | list }}"

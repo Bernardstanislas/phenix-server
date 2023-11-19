@@ -1,0 +1,8 @@
+---
+- name: Create the student users
+  user:
+    name: "{{ student }}"
+    shell: /bin/bash
+  loop: "{{ students }}"
+  loop_control:
+    loop_var: student
