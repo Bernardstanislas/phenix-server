@@ -30,6 +30,16 @@
   notify:
     - Restart dnsmasq
 
+- name: Copy iPxe efi file
+  copy:
+    src: ipxe.efi
+    dest: /srv/tftp/ltsp/ipxe.efi
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - Restart dnsmasq
+
 - name: Setup dnsmasq for webserver
   template:
     src: home-dnsmasq.conf

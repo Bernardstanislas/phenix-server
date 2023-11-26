@@ -49,7 +49,7 @@
     - role: dnsmasq
       tags:
         - webserver
-        - dhcp
+        - dnsmasq
         - lite
     - role: nfs
       tags:
