@@ -1,0 +1,7 @@
+﻿#preview {
+	border:2px solid #eee;
+	max-height:300px;
+	overflow-y:auto;
+	overflow-x: hidden;
+	padding:10px;
+}

@@ -1,0 +1,49 @@
+﻿.center {
+	text-align:center
+}
+.bw {
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   cursor:pointer;
+}
+.blur {
+	filter: blur(3px);
+   -webkit-filter: blur(3px);
+   cursor:pointer;}
+.brighten {
+   filter: brightness(200%);
+   -webkit-filter: brightness(200%);
+   cursor:pointer;}
+.contrast {
+   filter: contrast(200%);
+   -webkit-filter: contrast(200%);
+   cursor:pointer;}
+.drop {
+   filter: drop-shadow(8px 8px 10px grey);
+   -webkit-filter: drop-shadow(8px 8px 10px grey);
+   cursor:pointer;}
+.hue {
+   filter: hue-rotate(90deg);
+   -webkit-filter: hue-rotate(90deg);
+   cursor:pointer;}
+.invert {
+   filter: invert(100%);
+   -webkit-filter: invert(100%)
+   cursor:pointer;}
+.opacity1 {
+   filter: opacity(30%);
+   -webkit-filter: opacity(30%);
+   cursor:pointer;}
+.saturated {
+   filter: saturate(800%);
+   -webkit-filter: saturate(800%);
+   cursor:pointer;}
+.sepia {
+   filter: sepia(100%);
+   -webkit-filter: sepia(100%);
+   cursor:pointer;}
+.multiple {
+   filter: blur(2px) grayscale(0.5) opacity(0.8);
+   -webkit-filter: blur(2px) grayscale(0.5) opacity(0.8);
+   cursor:pointer;}
+

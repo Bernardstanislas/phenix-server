@@ -1,0 +1,4 @@
+#characters .table {table-layout:fixed;word-wrap:break-word;width:100%}
+#characters .table tbody td:nth-child(1) {background:#FBFAFF;font-weight:600;font-size:1.5em}
+#characters .table tbody td:nth-child(5), #characters .table thead th:nth-child(5) {text-align:left}
+#characters .table tbody td {vertical-align:middle}

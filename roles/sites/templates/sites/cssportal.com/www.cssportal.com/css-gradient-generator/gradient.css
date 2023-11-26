@@ -1,0 +1,181 @@
+﻿.preset {
+	height:100px;cursor:pointer;border-radius:5px;
+}
+.preset_box {
+	border:1px solid #e2e2e2;
+	border-radius:5px;
+	padding:10px;
+	background:#fafafa;
+	margin-bottom:10px;
+}
+.p1 {
+	background: linear-gradient(to bottom right, #25CC0F 0%, #9E3212 100%)
+}
+.p2 {
+	background: radial-gradient(circle at center center, #b8e1fc 0%, #231421 100%);	
+}
+.p3 {
+	background: linear-gradient(to right, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%);	
+}
+.p4 {
+	background: linear-gradient(to right, #f8ffe8 0%,#e3f5ab 33%,#b7df2d 100%);	
+}
+.p5 {
+	background: linear-gradient(to right, #cfe7fa 0%,#6393c1 100%);	
+}
+.p6 {
+	background: linear-gradient(to right, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+}
+.p7 {
+	background: linear-gradient(to right, #ffb76b 0%,#ffa73d 30%,#ff7c00 60%,#ff7f04 100%);
+}
+.p8 {
+	background: linear-gradient(to right, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+}
+.p9 {
+	background: radial-gradient(circle at center center, #f6f8f9 0%,#e5ebee 30%,#d7dee3 60%,#f5f7f9 100%);
+}
+.p10 {
+    background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+}
+.p11 {
+	background: linear-gradient(to left, #00ff00 0%, #FF0000 100%);
+}
+.p12 {
+    background: linear-gradient(to left, #000000 0%, #ffffff 50%, #000000 100%);
+}
+.p13 {
+    background: linear-gradient(to left, #ff0000 0%, #ffff00 25%, #05C1FF 50%, #ffff00 75%, #ff0000 100%);
+}
+.p14 {
+    background: linear-gradient(to left, #ffff00 0%, #05C1FF 50%, #ffff00 100%);
+}
+.p15 {
+	background: linear-gradient(to right, #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%);
+}
+.p16 {
+	background: linear-gradient(to right, #cb60b3 0%, #c146a1 50%, #a80077 51%, #db36a4 100%);
+}
+.p17 {
+	background: linear-gradient(to right, #a7cfdf 0%,#23538a 100%);	
+}
+.p18 {
+	background: linear-gradient(to right, #e4efc0 0%,#abbd73 100%);	
+}
+.p19 {
+    background: linear-gradient(to left, #FF0000 0%, #ffff00 50%, #ff0000 100%);
+}
+.p20 {
+    background: linear-gradient(to left, #ff0000 0%, #000000 100%);
+}
+.p21 {
+	background: linear-gradient(to right, #b7deed 0%, #71ceef 25%, #21b4e2 75%, #b7deed 100%);	
+}
+.p22 {
+	background: radial-gradient(circle at center center, #ff0000 0%, #ffff00 25%, #05C1FF 50%, #ffff00 75%, #ff0000 100%);	
+}
+.p23 {
+    background: linear-gradient(to left, #ffffff 0%, #FF0000 100%);	
+}
+.p24 {
+    background: linear-gradient(to left, #00FF00 0%, #00ffff 100%);	
+}
+
+
+#gradient-demo{
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    overflow: visible;    
+    border: 0px;
+}
+.list-group li:before {
+	display:none;
+}
+.list-group li {
+	list-style-type:none;
+}
+
+.list-group .select-dropdown{
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.list-group select{
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px 15px 5px 15px;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 2px;
+  width:100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+select:active, select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.select-dropdown:after {
+    content: " ";
+	cursor: pointer;
+    position: absolute;
+    top: 38%;
+	right: 20px;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #aaa;
+  }
+.clear {
+	clear:both;
+}
+.remove_stopper {
+	/*color:#fff;*/
+	cursor:pointer;
+	/*background:red;
+	height:20px;
+	line-height:20px;
+	padding:0 3px;
+	border-radius:10px;*/
+}
+.grad_box {
+	border:1px solid #e2e2e2;
+	border-radius:5px;
+	padding:10px 10px 0 10px;
+	margin-bottom:15px;
+	background:#fafafa;
+}
+.grad_example {
+	height:200px;
+	margin-bottom:10px;
+	border-radius:5px;
+}
+.gr1 {
+	background: linear-gradient(#23EC05, #D712C5);
+}
+.gr1a {
+	background: radial-gradient(#23EC05, #D712C5);
+}
+.gr1b {
+	background: radial-gradient(circle, #23EC05, #D712C5);
+}
+.gr1c {
+	background: radial-gradient(circle at top left, #23EC05, #D712C5);
+}
+.gr2 {
+    background: linear-gradient(to right, #0cbaba, #380036);	
+}
+.gr3 {
+    background: linear-gradient(to right, #0cbaba, #380036, darksalmon);	
+}
+.gr4 {
+    background: linear-gradient(to right, #0cbaba 50%, #380036, darksalmon);	
+}

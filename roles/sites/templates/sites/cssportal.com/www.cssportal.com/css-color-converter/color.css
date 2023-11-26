@@ -1,0 +1,71 @@
+﻿.lighter, .darker {
+	height:35px;
+	margin-bottom:5px;
+	padding: 3px;
+	box-shadow:2px 2px 5px #444;
+	cursor:pointer;
+	text-align:center;
+}
+.lighter span, .darker span {
+	background:#fff;
+	padding:0 5px;
+	border-radius:5px;
+	border:1px solid #e2e2e2;
+	font-size:.8em;
+}
+
+.colconvert {
+	width:100px;
+	display:inline-block;
+}
+
+#combine-output span { width: 80px; height: 80px; display:inline-block; cursor:pointer; line-height:80px;}
+
+#filter-output a {
+	width:40px;height:40px;display:inline-block;
+}
+.font, .border, .background {
+	border:1px solid #ccc;
+	box-shadow:2px 2px 5px #444;
+	height:60px;
+}
+.fontcolor {
+	line-height:42px;
+	text-align:center;
+}
+.bordercolor {
+	border:2px solid;
+	margin: 10px;
+	height:39px;
+}
+.backgroundcolor {
+	margin: 10px;
+	height:40px;
+}
+code {
+	position:relative;
+	bottom:0;
+	margin:0 10px;
+}
+h2 {
+	margin:15px 0;
+	border-bottom:1px solid #ccc;
+}
+.colorschemebox {
+	border:1px solid #ccc;
+	padding: 5px 5px 5px 5px;
+	display:inline-block;
+	text-align:center;
+	box-shadow:2px 2px 5px #444;
+	float:left;
+	margin-right:30px;
+	margin-bottom:30px;
+}
+.colorschemebox span em {
+	font-size:.8em;
+	background:#fff;
+	border-radius:5px;
+	border:1px solid #e2e2e2;
+	font-style:normal;
+	padding:0 5px;
+}

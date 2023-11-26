@@ -1,0 +1,111 @@
+﻿.ps1 {
+  -webkit-filter: contrast(110%) brightness(110%) saturate(130%);
+  filter: contrast(110%) brightness(110%) saturate(130%);
+  cursor:pointer;
+}
+.ps2 {
+  -webkit-filter: contrast(90%) brightness(120%) saturate(85%) hue-rotate(20deg);
+  filter: contrast(90%) brightness(120%) saturate(85%) hue-rotate(20deg);
+  cursor:pointer;
+}
+.ps3 {
+  -webkit-filter: contrast(90%) brightness(110%);
+  filter: contrast(90%) brightness(110%);
+	cursor:pointer;
+}
+.ps4 {
+  -webkit-filter: contrast(90%) sepia(20%);
+  filter: contrast(90%) sepia(20%);
+	cursor:pointer;
+}
+.ps5 {
+  -webkit-filter: brightness(105%) hue-rotate(350deg);
+  filter: brightness(105%) hue-rotate(350deg);
+	cursor:pointer;
+}
+.ps6 {
+  -webkit-filter: contrast(90%) brightness(120%) saturate(110%);
+  filter: contrast(90%) brightness(120%) saturate(110%);
+	cursor:pointer;
+}
+.ps7 {
+  -webkit-filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
+  filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
+	cursor:pointer;
+}
+
+.ps8 {
+  -webkit-filter: contrast(150%) saturate(110%);
+  filter: contrast(150%) saturate(110%);
+	cursor:pointer;
+}
+
+.ps9 {
+  -webkit-filter: contrast(85%) brightness(110%) saturate(75%) sepia(22%);
+  filter: contrast(85%) brightness(110%) saturate(75%) sepia(22%);
+	cursor:pointer;
+}
+.ps10 {
+  -webkit-filter: contrast(150%) brightness(90%);
+  filter: contrast(150%) brightness(90%);
+	cursor:pointer;
+}
+.ps11 {
+  -webkit-filter:grayscale(100%) contrast(110%) brightness(110%);
+  filter: grayscale(100%) contrast(110%) brightness(110%);
+	cursor:pointer;
+}
+.ps12 {
+  -webkit-filter:grayscale(50%) contrast(95%) brightness(90%);
+  filter: grayscale(50%) contrast(95%) brightness(90%);
+	cursor:pointer;
+}
+
+.examples .topicright{cursor:pointer;position:absolute;top:-1px;right:-1px;padding:1px 7px;font-size:12px;font-weight:bold;background-color:#f5f5f5;border:1px solid #ddd;color:#555;border-radius:0 4px 0 4px;}
+
+.img_p {
+	text-align:center;
+}
+
+.blur1 {
+	filter: blur(5px);
+}
+.blur2 {
+	filter: blur(10px);
+}
+.brightness1 {
+	filter: brightness(50%);
+}
+.brightness2 {
+	filter: brightness(150%);
+}
+.gray1 {
+	filter: grayscale(50%);
+}
+.gray2 {
+	filter: grayscale(100%);
+}
+.hue1 {
+	filter: hue-rotate(90deg);
+}
+.hue2 {
+	filter: hue-rotate(180deg);
+}
+.invert1 {
+	filter: invert(75%);
+}
+.invert2 {
+	filter: invert(100%);
+}
+.saturate1 {
+	filter: saturate(20%);
+}
+.saturate2 {
+	filter: saturate(200%);
+}
+.sepia1 {
+	filter: sepia(50%);
+}
+.sepia2 {
+	filter: sepia(100%);
+}

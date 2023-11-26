@@ -1,0 +1,16 @@
+div.h_text{
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	padding:5px;
+}
+#code1{
+	height:450px;
+	font-size:14px;
+	border:1px solid #ddd;
+}
+.ui-resizable-s{height:10px;}
+@media (max-width : 980px) {
+	div.h_text{text-align:left;}
+	#code1{height:400px;}
+}

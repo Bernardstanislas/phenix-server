@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+---------------------
+Gutter Background
+------------------
+*/
+.CodeMirror-scroll{
+	background: url("../img/gutter-bg.gif") repeat-y scroll -26px top transparent;
+}
+/*
+-------------------
+Layout Styles
+----------------
+*/
+body{
+    color: #fff;
+    font-size:14px;line-height:21px;
+    text-align:center;
+	min-width:1006px;
+	background:#fff;
+}
+table{
+    width:100%;height:100%;
+}
+table td{
+    vertical-align: top;
+}
+.clear{
+	height:0;	
+	clear:both;	
+	visibility:hidden;
+}
+.header-wrapper{
+    color: #464F5C;
+    height:64px;
+    border-bottom:1px solid #ccc;
+    /*background: url("../img/editor-header-bg.gif") repeat-x scroll 0 0 #F3F3F3;*/
+}
+.header{
+    text-align:left;
+    padding-left:15px;
+}
+.logo-box{
+    float: left;
+    padding-top: 8px;
+	margin-right: 64px;
+}
+.logo{
+    float:left;
+    padding-top: 2px;
+}
+
+.navbar-brand-box{
+    padding:0 1.5rem;
+    width:260px;
+	position:relative;
+}
+.logo{
+    /*line-height:69px;*/
+    color:inherit!important
+}
+
+.logo-txt{
+    font-weight:700;
+    font-size:24px;
+    vertical-align:middle;
+    margin-left:15px;
+	color:#000;
+	position:absolute;top:10px;
+}
+.navbar-brand-box a {
+	text-decoration:none;
+}
+td.footer_wrapper{
+    background-color:#efefef;
+    border-bottom: 1px solid #D7D7D7;
+}
+.footer {
+    width: 100%; height: 12px;
+    line-height: 0;
+    bottom: 1px;
+    position: relative;
+    background: url("../img/footer-bg.png") repeat-x scroll left bottom transparent;  
+}
+/* Frame Styles */
+html, body, table, form, textarea{
+width: 100%; height:100%;   
+}
+table.wrapper{
+    padding-bottom: 12px;
+    background: url("../img/footer-bg.png") repeat-x scroll left bottom transparent;
+}
+table.frame-box, table.frame-box td, table.frame-box td textarea{
+    height: 100%;
+    min-height: 100%;
+	border: none;
+	resize: none;
+	overflow: hidden;
+}
+table.frame-box td iframe{
+    width: 100%;
+    display: block;
+}
+table.frame-box td{
+    width: 50%;
+    text-align: left;
+}
+.full-screen{
+    width: 100% !important;
+}
+.control-bar{
+    float: left;
+    padding-top: 14px;
+    height: 30px;
+}
+.control-bar .buttons{
+    float: left;
+    padding-right: 30px;
+}
+.control-bar label{
+  float: left;
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 19px;
+  font-family: "Myriad Pro",Verdana,sans-serif;
+}
+.control-bar label input{
+  float: left;
+  outline: none;
+  margin-right: 5px;
+  vertical-align: baseline;
+}
+.control-bar a, .control-bar input{
+	color: #ffffff;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;  
+	border: none;
+	outline: none;
+	float: left;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right: 10px;
+	text-shadow: 0 0 2px rgba(0,0,0,0.25);
+	font-family: arial,sans-serif;
+	background: url("../img/control-btn-bg.png") no-repeat left top transparent;
+}
+.control-bar input{
+	padding: 0 13px;
+}
+.control-bar a{
+	padding-left: 13px;
+}
+.control-bar a span{
+	height: 30px;	
+	display: block;
+	padding-right:15px;
+	margin-right: -2px;
+	background: url("../img/control-btn-bg.png") no-repeat right top transparent;
+}
+.control-bar a:hover, .control-bar input:hover{
+	background-position: left -30px;
+}
+.control-bar a:hover span{
+	background-position: right -30px;
+}
+.control-bar a.inactive, .control-bar a.inactive:hover{
+	cursor: default;
+	background-position: left -60px;
+}
+.control-bar a.inactive span, .control-bar a.inactive:hover span{
+	background-position: right -60px;
+}
+#view{
+	height:100%;
+	background:#fff;
+	outline:none;
+	overflow:auto;
+    border: none;
+}
+.outer-area{
+	padding:6px 6px 0;    
+	background:#f3f3f3;
+    position: relative;
+}
+.inner-area{
+	background:#fff;
+	border:1px solid #cccccc;
+	border-bottom: none;
+}
+.outer-wrapper{
+    position:relative;
+    background:#f3f3f3;
+    padding:6px 6px 0 0;
+}
+.output-area{
+    border:1px solid #cccccc;
+	border-bottom: none;
+}
+.show-right-pane, .hide-right-pane{
+    width: 7px;
+    height: 23px;
+    position: absolute;
+    z-index: 999;
+    top: 45px;
+    display: block;
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+    background: url("../img/toggle-button.png") no-repeat;
+}
+.show-right-pane{
+    right: 6px;
+    display: none;
+    background-position: 0 0;
+}
+.hide-right-pane{
+    left: 0;
+    background-position: 0 -23px;
+}
+/* New Styles for Codelab */
+.control-bar a.show-output span{
+	padding-right: 19px;
+}
+.control-bar a.new-window{
+	margin-left: -14px;
+}
+.control-bar a.new-window span{
+	padding-right: 12px;
+}
+.control-bar a.new-window:hover{
+	background-position: -5px -30px;
+}
+.control-bar a.inactive.new-window:hover{
+	background-position: left -60px;
+}
+.ad-wrapper{
+	height: 90px;
+	overflow: hidden;
+	padding: 6px;
+	border-top: 1px solid #CCCCCC;
+	position: relative;
+	background: #F3F3F3;
+}
+.ad-wrapper .ad-box{
+	width: 768px;
+	margin: 0 auto;
+	padding: 0;
+}
+.ad-wrapper .ad-box:first-child{
+	padding-left: 0;
+}
+.top_ad{
+    float: left;
+    margin: 5px 0px 0px 10px;
+    padding-right: 5px;
+}
+
+

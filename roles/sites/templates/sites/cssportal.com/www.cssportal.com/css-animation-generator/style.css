@@ -1,0 +1,21 @@
+#preview {
+	width:200px;
+	height:200px;
+	background:#6188FF;
+	border-radius:10px;
+}
+
+.preview {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+label {
+	padding:0!important;
+	margin:0!important;
+}
+
+.form-label {
+	margin-top:10px!important;
+}

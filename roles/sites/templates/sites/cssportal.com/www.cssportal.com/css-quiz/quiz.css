@@ -1,0 +1,78 @@
+#next, #sub{
+	display:none;
+}
+
+.front{
+	margin:2%;
+	outline:5px solid #766df4;
+	padding:5%;
+	text-align: center;
+}
+.answers{
+	margin:2%;
+	margin-top:5%;
+	padding:5%;
+	align-self: center;
+	display:none;
+}
+.quiz{
+	padding:5%;
+	outline:5px solid #766df4;
+	align-self: center;
+	display:none;
+}
+.result{
+	margin:2%;
+	padding:5%;
+	outline:5px solid #766df4;
+	text-align: center;
+	display: none;
+}
+
+.radio input[type=radio] { display: none; }
+.radio label {
+  margin-right: 1em;
+  background:#f2f2f2;
+  border:2px solid #f2f2f2;
+  margin:10px 0;
+  padding:10px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.radio input + label {
+	display:block;
+}
+
+.radio input:checked + label {
+	border:2px solid #766df4;
+}
+
+#q{
+	padding-top:10px;
+	padding-left:10px; 
+	padding-bottom:10px;
+	font-size:22px;
+	font-weight: bold; 
+}
+
+.score{
+	font-size:2em;
+	font-weight: bolder;
+	color: #766df4;
+}
+
+.answers{
+	padding:5%;
+	outline:5px solid #766df4;
+	display: none;
+}
+.aa{
+	color:green;
+	font-weight: bold;
+}
+.qa {
+	background:#f2f2f2;
+	padding:10px;
+	margin:10px 0;
+}

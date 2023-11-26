@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.cssportal.com/blog-examples/transition-2.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 22:26:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Blog Example</title>
+<style>
+.animation_box {
+  padding: 0 15px 15px 15px;
+  }
+.elem {
+  background: #3366ff;
+  color: white;
+  width: 190px;
+  padding: 5px 0 5px 0;
+  text-indent: 5px;
+  margin: 5px 0;
+  transition: width 2s;
+}
+.animation_box:hover .elem {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="animation_box">
+	<p>Hover over container to view transition-function-timing.</p>
+	<div class="elem" style="transition-timing-function: ease">ease</div>
+	<div class="elem" style="transition-timing-function: linear">linear</div>
+	<div class="elem" style="transition-timing-function: ease-in">ease-in</div>
+	<div class="elem" style="transition-timing-function: ease-out">ease-out</div>
+	<div class="elem" style="transition-timing-function: ease-in-out">ease-in-out</div>
+	<div class="elem" style="transition-timing-function: step-start">step-start</div>
+	<div class="elem" style="transition-timing-function: step-end">step-end</div>
+	<div class="elem" style="transition-timing-function: steps(6, end)">steps(6, end)</div>
+	<div class="elem" style="transition-timing-function: cubic-bezier(0, 1.2, 1, -0.6)">cubic-bezier(0, 1.2, 1, -0.6)</div>
+</div>
+</body>
+
+<!-- Mirrored from www.cssportal.com/blog-examples/transition-2.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 22:26:01 GMT -->
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.cssportal.com/tryit/index.php?file=blog/slide-in-menu by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 22:27:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>CSSPortal Tryit Examples</title>
+	<meta name="description" content="CSSPortal has many examples and resources to learn from. Come on over and check it out!" />
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style/codemirror.css" />
+	<link rel="stylesheet" href="style/custom.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/codemirror.js"></script>
+	<script type="text/javascript" src="js/utility.js"></script>
+	<script src="js/xml.js"></script>    
+	<script src="js/javascript.js"></script>
+	<script src="js/css.js"></script>
+	<script src="js/htmlmixed.js"></script>
+	<script src="js/active-line.js"></script>
+	<script type="text/javascript" src="js/engine.js"></script>
+
+	<style type="text/css">
+		html{overflow:auto;overflow-x:hidden;}
+		.CodeMirror{font-size: 12px; line-height: 16px; font-family:MenschRegular,Menlo,Monaco,consolas,monospace;background: url("img/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+	</style>
+	</head>
+<body>
+        <table>
+            <tr>
+                <td class="header-wrapper">
+                    <div class="header">
+                        <div class="logo-box">
+                        <div class="navbar-brand-box">
+                            <a href="../index.html" class="logo logo-light">
+                                <span class="logo-lg">
+                                    <img src="../assets/images/cssicon.png" alt="" height="36"> <span class="logo-txt">CSS Portal</span>
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="control-bar">
+                            <div class="top_ad">
+                            <div class="buttons">
+                                <input type="submit" onclick="startit()" value="Edit and Click Me &raquo;" />
+                            </div>                            
+                            </div>
+                        </div>
+                    <div class="clear">&nbsp;</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="frame-box">
+                        <tr>
+                            <td id="left-pane">
+			      				<div class="outer-area">
+                                	<span class="show-right-pane">&nbsp;</span>
+									<div class="inner-area">
+                                		<textarea id="code" name="code"><!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+html, body {
+   height: 100%;
+}
+body {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+#container {
+   display: flex;
+   min-height: 100%;
+}
+input[type=checkbox] {
+   position: absolute;
+   opacity: 0;
+}
+label {
+   position: absolute;
+   top: 10px;
+   left: 40px;
+   z-index: 1;
+   display: block;
+   font-size:3em;
+   color: #444;
+   cursor: pointer;
+   width:30px;height:30px;
+   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+
+   transform: translate3d(0, 0, 0);
+   transition: transform .4s;
+}
+input[type=checkbox]:checked ~ label {
+   transform: translate3d(250px, 0, 0) rotate(90deg);
+}
+.content {
+   width:100%;
+   padding: 40px;
+   background: #f2f2f2;
+   transform: translate3d(0, 0, 0);
+   transition: transform .4s;
+}
+input[type=checkbox]:checked ~ .content {
+   transform: translate3d(250px, 0, 0);
+}
+input[type=checkbox]:checked ~ .slide-menu {
+   transform: translate3d(0, 0, 0);
+}
+input[type=checkbox]:checked ~ .slide-menu .menu li {
+   width: 100%;
+}
+.slide-menu {
+   transform: translate3d(-250px, 0, 0);
+   position: absolute;
+   width: 250px;
+   background: #4f6b81;
+   color: #ddd;
+   left: 0;
+   height: 100%;
+   transition: all .4s;
+}
+.slide-menu h1 {
+   margin: 10px;
+   text-shadow: 1px 1px 1px #000;
+}
+.menu {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.menu a {
+   display: block;
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.1em;
+   padding: 15px;
+   background: linear-gradient(#628297, #4f6b81);
+   border-bottom: 1px solid #1e222b;
+   box-shadow: inset 0px 1px 1px #8b9db3;
+}
+.menu a:hover {
+   background: linear-gradient(#3b3f48, #3c434d);
+   box-shadow: inset 0px 1px 1px #475059;
+}
+
+    </style>
+  </head>
+  <body>
+	<div id="container">
+
+	  <input id="toggle" type="checkbox"><label for="toggle"></label>
+	  
+	  <div class="content"> 
+		<h1>CSS Slide In Menu Example</h1>
+		<p>If you need the menu on the right hand side, very easy to achieve, just check out our blog at CSSPortal - <a href="../blog/css-slide-in-menu/index.html">CSS Slide in Menu</a>.</p>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+		<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+		<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+		<p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+	  </div>
+
+	  <div class="slide-menu">
+		<h1>Menu</h1>
+		<nav class="menu">
+		  <li><a href="#">Home</a></li>
+		  <li><a href="#">Products</a></li>
+		  <li><a href="#">Services</a></li>
+		  <li><a href="#">FAQ</a></li>
+		  <li><a href="#">Register</a></li>
+		  <li><a href="#">Sign In</a></li>
+		</nav>
+	  </div>
+
+	</div>
+  </body>
+
+<!-- Mirrored from www.cssportal.com/tryit/index.php?file=blog/slide-in-menu by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 22:27:30 GMT -->
+</html></textarea>
+										<script type="text/javascript">
+											var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+												mode: "text/html",
+												tabMode: "indent",
+												styleActiveLine: true,
+												lineNumbers: true,
+												lineWrapping: true
+											});
+										</script>
+									</div>
+			      				</div>
+                            </td>
+                            <td id="right-pane">                               
+                                <div class="outer-wrapper">
+									<div class="output-area">
+                                        <iframe id="view" class="result_output" frameborder="0" name="view" src="javascript:''">Sorry, you need iframes to use Tryit Editor.</iframe>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ad-wrapper">
+                        <div class="ad-box">                         
+<div class="g_top text-center my-3">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- CSS Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1356719463849900"
+     data-ad-slot="5275015068"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>        
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>    
+</body>
+</html>
+

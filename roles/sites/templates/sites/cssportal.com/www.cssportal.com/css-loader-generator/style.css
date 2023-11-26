@@ -1,0 +1,41 @@
+#loaderfile {
+	/*text-align:center;
+	height:150px;
+	line-height:150px;*/
+	display:grid;
+	grid-template-columns: none;
+	justify-items: center;
+	align-items: center;
+    height: 175px;
+	background:white;
+	background: repeating-conic-gradient(#ffffff 0% 25%, #f7f7fc 0% 50%) 50% / 20px 20px;
+	border:1px solid #b6b6d1;
+	border-radius:5px;
+}
+.loaders {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.25rem;  
+}
+
+.loader {
+  border-radius: .25rem;
+  border: 1px solid #dfdfeb;
+  min-height:150px;
+  cursor:pointer;
+  display:grid;
+  grid-template-columns: none;
+  justify-items: center;
+  align-items: center;
+}
+.loader:hover {
+  border-color:#b6b6d1;
+}
+.loader > div {
+	margin:auto;
+}
+.custom-loader {
+	display: inline-block;
+	vertical-align: middle;
+}

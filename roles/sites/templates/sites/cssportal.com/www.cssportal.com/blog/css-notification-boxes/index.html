@@ -1,0 +1,646 @@
+
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from www.cssportal.com/blog/css-notification-boxes/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 22:28:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        
+        <meta charset="utf-8" />
+        <title>CSS Notification Boxes - CSSPortal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="" />
+		<meta name="description" content="Today we are going to look at the design of CSS Notification Boxes. Notification or Alert Boxes are a great way to inform the user of a variety of messages, such as: error messages, success messages, warning messages and general notification. A great example for using these notification boxes would be for user registrations for" />
+		
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="index.html">
+		<meta property="og:title" content="CSS Notification Boxes - CSSPortal">
+		<meta property="og:description" content="Today we are going to look at the design of CSS Notification Boxes. Notification or Alert Boxes are a great way to inform the user of a variety of messages, such as: error messages, success messages, warning messages and general notification. A great example for using these notification boxes would be for user registrations for">
+		<meta property="og:image" content="../../assets/images/cssicon.png">
+
+		<meta name="twitter:card" content="summary">
+		<meta property="twitter:url" content="index.html">
+		<meta name="twitter:title" content="CSS Notification Boxes - CSSPortal">
+		<meta name="twitter:description" content="Today we are going to look at the design of CSS Notification Boxes. Notification or Alert Boxes are a great way to inform the user of a variety of messages, such as: error messages, success messages, warning messages and general notification. A great example for using these notification boxes would be for user registrations for">
+		<meta name="twitter:image" content="../../assets/images/cssicon.png">
+
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+
+        <link href="../../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<link rel="canonical" href="index.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="CSS Notification Boxes - CSSPortal" />
+	<meta property="og:description" content="Today we are going to look at the design of CSS Notification Boxes. Notification or Alert Boxes are a great way to inform the user of a variety of messages, such as: error messages, success messages, warning messages and general notification. A great example for using these notification boxes would be for user registrations for [&hellip;]" />
+	<meta property="og:url" content="index.html" />
+	<meta property="og:site_name" content="CSSPortal" />
+	<meta property="article:publisher" content="https://www.facebook.com/cssportalcom" />
+	<meta property="article:published_time" content="2013-05-05T04:47:52+00:00" />
+	<meta property="article:modified_time" content="2019-09-15T10:13:59+00:00" />
+	<meta property="og:image" content="../wp-content/uploads/2013/05/alertboxes.png" />
+	<meta name="author" content="Rene Spronk" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@cssportal" />
+	<meta name="twitter:site" content="@cssportal" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.cssportal.com/blog/#website","url":"https://www.cssportal.com/blog/","name":"CSSPortal","description":"Fun with CSS!","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.cssportal.com/blog/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.cssportal.com/blog/css-notification-boxes/#primaryimage","url":"http://www.cssportal.com/blog/wp-content/uploads/2013/05/alertboxes.png","contentUrl":"http://www.cssportal.com/blog/wp-content/uploads/2013/05/alertboxes.png"},{"@type":"WebPage","@id":"https://www.cssportal.com/blog/css-notification-boxes/","url":"https://www.cssportal.com/blog/css-notification-boxes/","name":"CSS Notification Boxes - CSSPortal","isPartOf":{"@id":"https://www.cssportal.com/blog/#website"},"primaryImageOfPage":{"@id":"https://www.cssportal.com/blog/css-notification-boxes/#primaryimage"},"datePublished":"2013-05-05T04:47:52+00:00","dateModified":"2019-09-15T10:13:59+00:00","author":{"@id":"https://www.cssportal.com/blog/#/schema/person/a8f63c5c67233d3a52019f5d27e065f4"},"breadcrumb":{"@id":"https://www.cssportal.com/blog/css-notification-boxes/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.cssportal.com/blog/css-notification-boxes/"]}]},{"@type":"BreadcrumbList","@id":"https://www.cssportal.com/blog/css-notification-boxes/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.cssportal.com/blog/"},{"@type":"ListItem","position":2,"name":"CSS Notification Boxes"}]},{"@type":"Person","@id":"https://www.cssportal.com/blog/#/schema/person/a8f63c5c67233d3a52019f5d27e065f4","name":"Rene Spronk","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.cssportal.com/blog/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/f78dbe6b98c06ee0cb5c160b4f92d6f0?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/f78dbe6b98c06ee0cb5c160b4f92d6f0?s=96&d=mm&r=g","caption":"Rene Spronk"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.cssportal.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.6"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../wp-includes/css/dist/block-library/style.minfc7a.css?ver=6.0.6' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/posts/106.json" /><link rel='shortlink' href='../index153d.html?p=106' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed7d08.json?url=https%3A%2F%2Fwww.cssportal.com%2Fblog%2Fcss-notification-boxes%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed1554?url=https%3A%2F%2Fwww.cssportal.com%2Fblog%2Fcss-notification-boxes%2F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>        <link href="../../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+		<link href="../../assets/css/prism.css" rel="stylesheet" type="text/css" />
+        <link href="../../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+		    </head>
+
+    <body data-topbar="dark">
+
+        <div id="layout-wrapper">
+
+            
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+
+                        <div class="navbar-brand-box">
+                            <a href="../../index.html" class="logo logo-light">
+                                <span class="logo-lg">
+                                    <img src="../../assets/images/cssicon.png" alt="" height="36"> <span class="logo-txt">CSS Portal</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>						
+                        <form class="app-search d-none d-lg-block" action="https://www.cssportal.com/search.php" method="GET">
+                            <div class="position-relative">
+                                <input name="q" type="text" class="form-control" placeholder="Search...">
+                                <button class="btn btn-primary" type="submit"><i class="fa-search align-middle"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="dropdown d-inline-block d-lg-none fav">
+                            <button type="button" class="btn header-item topbar-light bg-light-subtle border-start border-end me-2" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search mx-2"></i>
+								<span class="d-none d-md-inline-block fw-medium">Search</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-3" aria-labelledby="page-header-search-dropdown">
+								<form name="searchform" action="https://www.cssportal.com/search.php" method="GET">
+								<div class="form-group m-0 search">
+									<div class="input-group">
+										<input name="q" type="text" class="form-control sinput" placeholder="Search..." aria-label="Search Result" autocomplete="off">
+										<button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+									</div>
+								</div>
+								</form>
+                            </div>
+                        </div>
+						
+                        <div class="dropdown d-inline-block fav">
+                            <button type="button" class="btn header-item topbar-light bg-light-subtle border-start border-end right-bar-toggle me-2">
+                                <i class="fa-heart mx-2"></i>
+                                <span class="d-none d-md-inline-block fw-medium">Favorites</span>
+                            </button>
+                        </div>						
+                    </div>
+                </div>
+            </header>
+
+            <div class="vertical-menu">
+
+                <div data-simplebar class="h-100">
+
+                    <div id="sidebar-menu">
+                        <ul class="metismenu list-unstyled" id="side-menu">
+							<li class="menu-title mt-2">Categories</li>
+							<li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fa-gears"></i><span>CSS Generators</span></a>
+                                <ul class="sub-menu" aria-expanded="false">
+									<li><a href="../../css-animated-text-generator/index.html"><span>Animated Text Generator</span></a></li>
+									<li><a href="../../css-animation-generator/index.html"><span>Animation / Keyframe Generator</span></a></li>
+                                    <li><a href="../../css3-rounded-corner/index.html"><span>Border Radius Generator</span></a></li>
+									<li><a href="../../css3-box-shadow-generator/index.html"><span>Box Shadow Generator</span></a></li>
+									<li><a href="../../css3-button-generator/index.html"><span>Button Generator</span></a></li>
+									<li><a href="../../css-clip-path-generator/index.html"><span>Clip Path Generator</span></a></li>
+									<li><a href="../../css-column-generator/index.html"><span>Column Generator</span></a></li>
+									<li><a href="../../css-cubic-bezier-generator/index.html"><span>Cubic Bezier Generator</span></a></li>
+									<li><a href="../../css3-flip-switch/index.html"><span>Flip Swith Generator</span></a></li>
+									<li><a href="../../css-flexbox-generator/index.html"><span>Flexbox Generator</span></a></li>
+									<li><a href="../../css-glitch-text-effect/index.html"><span>Glitch Text Effect</span></a></li>
+									<li><a href="../../google-fonts-css-generator/index.html"><span>Google Fonts CSS</span></a></li>
+									<li><a href="../../css-gradient-generator/index.html"><span>Gradient Generator</span></a></li>
+									<li><a href="../../css-image-filter-generator/index.html"><span>Image Filter Generator</span></a></li>
+									<li><a href="../../style-input-range/index.html"><span>Input Range Generator</span></a></li>
+									<li><a href="../../layout-generator/index.html"><span>Layout Generator</span></a></li>
+									<li><a href="../../css-loader-generator/index.html"><span>Loader / Spinner Generator</span></a></li>
+									<li><a href="../../css3-menu-generator/index.html"><span>Menu Generator</span></a></li>
+									<li><a href="../../css3-rgba-generator/index.html"><span>RGBA Generator</span></a></li>
+									<li><a href="../../css-ribbon-generator/index.html"><span>Ribbon Generator</span></a></li>
+									<li><a href="../../css-ribbon-banner-generator/index.html"><span>Ribbon Banner Generator</span></a></li>									
+									<li><a href="../../css-scrollbar-generator/index.html"><span>Scrollbar Generator</span></a></li>
+									<li><a href="../../css-sprite-generator/index.html"><span>Sprite Generator</span></a></li>
+									<li><a href="../../css-text-gradient-generator/index.html"><span>Text Gradient Generator</span></a></li>
+									<li><a href="../../css-input-generator/index.html"><span>Text Input Generator</span></a></li>
+									<li><a href="../../css3-text-rotate-generator/index.html"><span>Text Rotate Generator</span></a></li>
+									<li><a href="../../css3-text-shadow-generator/index.html"><span>Text Shadow Generator</span></a></li>
+									<li><a href="../../css-tooltip-generator/index.html"><span>Tooltip Generator</span></a></li>
+									<li><a href="../../css-triangle-generator/index.html"><span>Triangle Generator</span></a></li>
+									<li><a href="../../css-3d-transform-generator/index.html"><span>3D Transform Generator</span></a></li>
+                                </ul>
+                            </li>							
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fas fa-align-right"></i><span>CSS Resources</span></a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="../../css-at-rules/index.html"><span>CSS At Rules</span></a></li>
+									<li><a href="../../animate-css/index.html"><span>CSS Animations</span></a></li>
+									<li><a href="../index.html"><span>CSS Blog</span></a></li>
+									<li><a href="../../css3-color-names/index.html"><span>CSS Color Names</span></a></li>
+									<li><a href="../../css-data-types/index.html"><span>CSS Data Types</span></a></li>
+									<li><a href="../../css-functions/index.html"><span>CSS Functions</span></a></li>
+									<li><a href="../../css3-preloaders/index.html"><span>CSS Preloaders</span></a></li>
+									<li><a href="../../css-properties/index.html"><span>CSS Properties</span></a></li>
+									<li><a href="../../css-pseudo-class/index.html"><span>CSS Pseudo Classes</span></a></li>
+									<li><a href="../../css-quiz/index.html"><span>CSS Quiz</span></a></li>
+									<li><a href="../../css-selectors/index.html"><span>CSS Selectors</span></a></li>
+									<li><a href="../../css3-shapes/index.html"><span>CSS Shapes</span></a></li>
+                                </ul>
+                            </li>
+							<li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fas fa-screwdriver-wrench"></i><span>CSS Tools</span></a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="../../less-to-css/index.html"><span>LESS to CSS Compiler</span></a></li>
+									<li><a href="../../scss-to-css/index.html"><span>SCSS to CSS Compiler</span></a></li>
+									<li><a href="../../stylus-to-css/index.html"><span>Stylus to CSS Compiler</span></a></li>
+									<li><a href="../../css-to-less/index.html"><span>CSS to LESS Converter</span></a></li>
+									<li><a href="../../css-to-scss/index.html"><span>CSS to SCSS Converter</span></a></li>
+									<li><a href="../../css-to-stylus/index.html"><span>CSS to Stylus Converter</span></a></li>
+									<li><a href="../../css-color-converter/index.html"><span>CSS Color Converter</span></a></li>
+									<li><a href="../../css-cursor-viewer/index.html"><span>CSS Cursor Viewer</span></a></li>
+									<li><a href="../../css-font-preview/index.html"><span>CSS Font Preview</span></a></li>
+									<li><a href="../../css-formatter/index.html"><span>CSS Code Formatter</span></a></li>
+									<li><a href="../../css-lengths/index.html"><span>CSS Lengths</span></a></li>
+									<li><a href="../../css-optimize/index.html"><span>CSS Code Optimizer</span></a></li>
+									<li><a href="../../css-validator/index.html"><span>CSS Validator</span></a></li>
+									<li><a href="../../css-style-editor/index.html"><span>CSS Visual Style Editor</span></a></li>
+									<li><a href="../../image-to-data/index.html"><span>Convert Image to Data</span></a></li>
+									<li><a href="../../online-css-editor/index.html"><span>Online CSS Editor</span></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fa-html5"></i><span>HTML Tools</span></a>
+                                <ul class="sub-menu" aria-expanded="false">
+									<li><a href='javascript: void(0);' class='has-arrow'>HTML Compilers</a>
+										<ul class='sub-menu' aria-expanded='true'>
+											<li><a href="../../html-to-pug/index.html"><span>HTML to Pug Converter</span></a></li>
+											<li><a href="../../html-to-markdown/index.html"><span>HTML to Markdown Converter</span></a></li>
+											<li><a href="../../pug-to-html/index.html"><span>Pug to HTML Compiler</span></a></li>
+											<li><a href="../../markdown-to-html/index.html"><span>Markdown to HTML Compiler</span></a></li>
+										</ul>
+									</li>
+									<li><a href="../../html-formatter/index.html"><span>HTML Beautifier / Minifier</span></a></li>
+									<li><a href="../../html-characters/index.html"><span>HTML Character Codes</span></a></li>
+									<li><a href="../../html-colors/index.html"><span>HTML Colors</span></a></li>
+									<li><a href="../../html-entity-encoder-decoder/index.html"><span>HTML Entity Encoder / Decoder</span></a></li>
+									<li><a href="../../html-online-editor/index.html"><span>HTML Online Editor</span></a></li>
+									<li><a href="../../html-table-generator/index.html"><span>HTML Table Generator</span></a></li>
+									<li><a href="../../html-tags/index.html"><span>HTML Tags</span></a></li>
+									<li><a href="../../html-tutorial/index.html"><span>HTML Tutorial</span></a></li>
+									<li><a href="../../html-validator/index.html"><span>HTML Validator</span></a></li>
+                                </ul>
+                            </li>
+							<hr>
+							<li class="menu-title mt-2">References</li>							
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fas fa-at"></i><span>CSS At-Rules</span></a>
+                                <ul class="sub-menu" aria-expanded="false">
+								<li><a href='../../css-at-rules/charset.html'>@charset</a></li><li><a href='../../css-at-rules/container.html'>@container</a></li><li><a href='../../css-at-rules/counter-style.html'>@counter-style</a></li><li><a href='../../css-at-rules/font-face.html'>@font-face</a></li><li><a href='../../css-at-rules/font-feature-values.html'>@font-feature-values</a></li><li><a href='../../css-at-rules/font-palette-values.html'>@font-palette-values</a></li><li><a href='../../css-at-rules/import.html'>@import</a></li><li><a href='../../css-at-rules/keyframes.html'>@keyframes</a></li><li><a href='../../css-at-rules/layer.html'>@layer</a></li><li><a href='../../css-at-rules/media.html'>@media</a></li><li><a href='../../css-at-rules/namespace.html'>@namespace</a></li><li><a href='../../css-at-rules/page.html'>@page</a></li><li><a href='../../css-at-rules/property.html'>@property</a></li><li><a href='../../css-at-rules/supports.html'>@supports</a></li>                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fas fa-table"></i><span>CSS Data Types</span></a>
+                                <ul class="sub-menu" aria-expanded="false">
+								<li><a href='../../css-data-types/absolute-size.html'>&lt;absolute-size&gt;</a></li><li><a href='../../css-data-types/alpha-value.html'>&lt;alpha-value&gt;</a></li><li><a href='../../css-data-types/angle.html'>&lt;angle&gt;</a></li><li><a href='../../css-data-types/angle-percentage.html'>&lt;angle-percentage&gt;</a></li><li><a href='../../css-data-types/basic-shape.html'>&lt;basic-shape&gt;</a></li><li><a href='../../css-data-types/blend-mode.html'>&lt;blend-mode&gt;</a></li><li><a href='../../css-data-types/color.html'>&lt;color&gt;</a></li><li><a href='../../css-data-types/filter-function.html'>&lt;filter-function&gt;</a></li><li><a href='../../css-data-types/flex.html'>&lt;flex&gt;</a></li><li><a href='../../css-data-types/frequency.html'>&lt;frequency&gt;</a></li><li><a href='../../css-data-types/gradient.html'>&lt;gradient&gt;</a></li><li><a href='../../css-data-types/image.html'>&lt;image&gt;</a></li><li><a href='../../css-data-types/integer.html'>&lt;integer&gt;</a></li><li><a href='../../css-data-types/length.html'>&lt;length&gt;</a></li><li><a href='../../css-data-types/number.html'>&lt;number&gt;</a></li><li><a href='../../css-data-types/percentage.html'>&lt;percentage&gt;</a></li><li><a href='../../css-data-types/position.html'>&lt;position&gt;</a></li><li><a href='../../css-data-types/ratio.html'>&lt;ratio&gt;</a></li><li><a href='../../css-data-types/resolution.html'>&lt;resolution&gt;</a></li><li><a href='../../css-data-types/string.html'>&lt;string&gt;</a></li><li><a href='../../css-data-types/time.html'>&lt;time&gt;</a></li><li><a href='../../css-data-types/url.html'>&lt;url&gt;</a></li>                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fa-circle-nodes"></i><span>CSS Functions</span></a>
+                                <ul class="sub-menu" aria-expanded="false">
+								<li><a href='../../css-functions/attr.html'>attr()</a></li><li><a href='../../css-functions/calc.html'>calc()</a></li><li><a href='../../css-functions/counter.html'>counter()</a></li><li><a href='../../css-functions/max.html'>max()</a></li><li><a href='../../css-functions/min.html'>min()</a></li><li><a href='../../css-functions/var.html'>var()</a></li><li><a href='javascript: void(0);' class='has-arrow'>color functions</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-functions/hsl.html'>hsl()</a></li><li><a href='../../css-functions/hsla.html'>hsla()</a></li><li><a href='../../css-functions/rgb.html'>rgb()</a></li><li><a href='../../css-functions/rgba.html'>rgba()</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>filter functions</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-functions/blur.html'>blur()</a></li><li><a href='../../css-functions/brightness.html'>brightness()</a></li><li><a href='../../css-functions/contrast.html'>contrast()</a></li><li><a href='../../css-functions/drop-shadow.html'>drop-shadow()</a></li><li><a href='../../css-functions/grayscale.html'>grayscale()</a></li><li><a href='../../css-functions/hue-rotate.html'>hue-rotate()</a></li><li><a href='../../css-functions/invert.html'>invert()</a></li><li><a href='../../css-functions/opacity.html'>opacity()</a></li><li><a href='../../css-functions/saturate.html'>saturate()</a></li><li><a href='../../css-functions/sepia.html'>sepia()</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>gradient functions</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-functions/conic-gradient.html'>conic-gradient()</a></li><li><a href='../../css-functions/linear-gradient.html'>linear-gradient()</a></li><li><a href='../../css-functions/radial-gradient.html'>radial-gradient()</a></li><li><a href='../../css-functions/repeating-conic-gradient.html'>repeating-conic-gradient()</a></li><li><a href='../../css-functions/repeating-linear-gradient.html'>repeating-linear-gradient()</a></li><li><a href='../../css-functions/repeating-radial-gradient.html'>repeating-radial-gradient()</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>shape functions</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-functions/circle.html'>circle()</a></li><li><a href='../../css-functions/ellipse.html'>ellipse()</a></li><li><a href='../../css-functions/inset.html'>inset()</a></li><li><a href='../../css-functions/path.html'>path()</a></li><li><a href='../../css-functions/polygon.html'>polygon()</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>transform functions</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-functions/matrix.html'>matrix()</a></li><li><a href='../../css-functions/matrix3d.html'>matrix3d()</a></li><li><a href='../../css-functions/perspective.html'>perspective()</a></li><li><a href='../../css-functions/rotate.html'>rotate()</a></li><li><a href='../../css-functions/rotate3d.html'>rotate3d()</a></li><li><a href='../../css-functions/rotateX.html'>rotateX()</a></li><li><a href='../../css-functions/rotateY.html'>rotateY()</a></li><li><a href='../../css-functions/rotateZ.html'>rotateZ()</a></li><li><a href='../../css-functions/scale.html'>scale()</a></li><li><a href='../../css-functions/scale3d.html'>scale3d()</a></li><li><a href='../../css-functions/scaleX.html'>scaleX()</a></li><li><a href='../../css-functions/scaleY.html'>scaleY()</a></li><li><a href='../../css-functions/scaleZ.html'>scaleZ()</a></li><li><a href='../../css-functions/skew.html'>skew()</a></li><li><a href='../../css-functions/skewX.html'>skewX()</a></li><li><a href='../../css-functions/skewY.html'>skewY()</a></li><li><a href='../../css-functions/translate.html'>translate()</a></li><li><a href='../../css-functions/translate3d.html'>translate3d()</a></li><li><a href='../../css-functions/translateX.html'>translateX()</a></li><li><a href='../../css-functions/translateY.html'>translateY()</a></li><li><a href='../../css-functions/translateZ.html'>translateZ()</a></li></ul>                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fa-css3"></i><span>CSS Properties</span></a>
+                                <ul class="sub-menu" aria-expanded="false">
+								<li><a href='../../css-properties/accent-color.html'>accent-color</a></li><li><a href='javascript: void(0);' class='has-arrow'>align-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/align-content.html'>align-content</a></li><li><a href='../../css-properties/align-items.html'>align-items</a></li><li><a href='../../css-properties/align-self.html'>align-self</a></li></ul><li><a href='../../css-properties/all.html'>all</a></li><li><a href='javascript: void(0);' class='has-arrow'>animation-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/animation.html'>animation</a></li><li><a href='../../css-properties/animation-composition.html'>animation-composition</a></li><li><a href='../../css-properties/animation-delay.html'>animation-delay</a></li><li><a href='../../css-properties/animation-direction.html'>animation-direction</a></li><li><a href='../../css-properties/animation-duration.html'>animation-duration</a></li><li><a href='../../css-properties/animation-fill-mode.html'>animation-fill-mode</a></li><li><a href='../../css-properties/animation-iteration-count.html'>animation-iteration-count</a></li><li><a href='../../css-properties/animation-name.html'>animation-name</a></li><li><a href='../../css-properties/animation-play-state.html'>animation-play-state</a></li><li><a href='../../css-properties/animation-timing-function.html'>animation-timing-function</a></li></ul><li><a href='../../css-properties/appearance.html'>appearance</a></li><li><a href='../../css-properties/aspect-ratio.html'>aspect-ratio</a></li><li><a href='../../css-properties/backdrop-filter.html'>backdrop-filter</a></li><li><a href='../../css-properties/backface-visibility.html'>backface-visibility</a></li><li><a href='javascript: void(0);' class='has-arrow'>background-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/background.html'>background</a></li><li><a href='../../css-properties/background-attachment.html'>background-attachment</a></li><li><a href='../../css-properties/background-blend-mode.html'>background-blend-mode</a></li><li><a href='../../css-properties/background-clip.html'>background-clip</a></li><li><a href='../../css-properties/background-color.html'>background-color</a></li><li><a href='../../css-properties/background-image.html'>background-image</a></li><li><a href='../../css-properties/background-origin.html'>background-origin</a></li><li><a href='../../css-properties/background-position.html'>background-position</a></li><li><a href='../../css-properties/background-position-x.html'>background-position-x</a></li><li><a href='../../css-properties/background-position-y.html'>background-position-y</a></li><li><a href='../../css-properties/background-repeat.html'>background-repeat</a></li><li><a href='../../css-properties/background-size.html'>background-size</a></li></ul><li><a href='../../css-properties/block-size.html'>block-size</a></li><li><a href='javascript: void(0);' class='has-arrow'>border-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/border.html'>border</a></li><li><a href='../../css-properties/border-block.html'>border-block</a></li><li><a href='../../css-properties/border-block-color.html'>border-block-color</a></li><li><a href='../../css-properties/border-block-end.html'>border-block-end</a></li><li><a href='../../css-properties/border-block-end-color.html'>border-block-end-color</a></li><li><a href='../../css-properties/border-block-end-style.html'>border-block-end-style</a></li><li><a href='../../css-properties/border-block-end-width.html'>border-block-end-width</a></li><li><a href='../../css-properties/border-block-start.html'>border-block-start</a></li><li><a href='../../css-properties/border-block-start-color.html'>border-block-start-color</a></li><li><a href='../../css-properties/border-block-start-style.html'>border-block-start-style</a></li><li><a href='../../css-properties/border-block-start-width.html'>border-block-start-width</a></li><li><a href='../../css-properties/border-block-style.html'>border-block-style</a></li><li><a href='../../css-properties/border-block-width.html'>border-block-width</a></li><li><a href='../../css-properties/border-bottom.html'>border-bottom</a></li><li><a href='../../css-properties/border-bottom-color.html'>border-bottom-color</a></li><li><a href='../../css-properties/border-bottom-left-radius.html'>border-bottom-left-radius</a></li><li><a href='../../css-properties/border-bottom-right-radius.html'>border-bottom-right-radius</a></li><li><a href='../../css-properties/border-bottom-style.html'>border-bottom-style</a></li><li><a href='../../css-properties/border-bottom-width.html'>border-bottom-width</a></li><li><a href='../../css-properties/border-collapse.html'>border-collapse</a></li><li><a href='../../css-properties/border-color.html'>border-color</a></li><li><a href='../../css-properties/border-end-end-radius.html'>border-end-end-radius</a></li><li><a href='../../css-properties/border-end-start-radius.html'>border-end-start-radius</a></li><li><a href='../../css-properties/border-image.html'>border-image</a></li><li><a href='../../css-properties/border-image-outset.html'>border-image-outset</a></li><li><a href='../../css-properties/border-image-repeat.html'>border-image-repeat</a></li><li><a href='../../css-properties/border-image-slice.html'>border-image-slice</a></li><li><a href='../../css-properties/border-image-source.html'>border-image-source</a></li><li><a href='../../css-properties/border-image-width.html'>border-image-width</a></li><li><a href='../../css-properties/border-inline.html'>border-inline</a></li><li><a href='../../css-properties/border-inline-color.html'>border-inline-color</a></li><li><a href='../../css-properties/border-inline-end.html'>border-inline-end</a></li><li><a href='../../css-properties/border-inline-end-color.html'>border-inline-end-color</a></li><li><a href='../../css-properties/border-inline-end-style.html'>border-inline-end-style</a></li><li><a href='../../css-properties/border-inline-end-width.html'>border-inline-end-width</a></li><li><a href='../../css-properties/border-inline-start.html'>border-inline-start</a></li><li><a href='../../css-properties/border-inline-start-color.html'>border-inline-start-color</a></li><li><a href='../../css-properties/border-inline-start-style.html'>border-inline-start-style</a></li><li><a href='../../css-properties/border-inline-start-width.html'>border-inline-start-width</a></li><li><a href='../../css-properties/border-inline-style.html'>border-inline-style</a></li><li><a href='../../css-properties/border-inline-width.html'>border-inline-width</a></li><li><a href='../../css-properties/border-left.html'>border-left</a></li><li><a href='../../css-properties/border-left-color.html'>border-left-color</a></li><li><a href='../../css-properties/border-left-style.html'>border-left-style</a></li><li><a href='../../css-properties/border-left-width.html'>border-left-width</a></li><li><a href='../../css-properties/border-radius.html'>border-radius</a></li><li><a href='../../css-properties/border-right.html'>border-right</a></li><li><a href='../../css-properties/border-right-color.html'>border-right-color</a></li><li><a href='../../css-properties/border-right-style.html'>border-right-style</a></li><li><a href='../../css-properties/border-right-width.html'>border-right-width</a></li><li><a href='../../css-properties/border-spacing.html'>border-spacing</a></li><li><a href='../../css-properties/border-start-end-radius.html'>border-start-end-radius</a></li><li><a href='../../css-properties/border-start-start-radius.html'>border-start-start-radius</a></li><li><a href='../../css-properties/border-style.html'>border-style</a></li><li><a href='../../css-properties/border-top.html'>border-top</a></li><li><a href='../../css-properties/border-top-color.html'>border-top-color</a></li><li><a href='../../css-properties/border-top-left-radius.html'>border-top-left-radius</a></li><li><a href='../../css-properties/border-top-right-radius.html'>border-top-right-radius</a></li><li><a href='../../css-properties/border-top-style.html'>border-top-style</a></li><li><a href='../../css-properties/border-top-width.html'>border-top-width</a></li><li><a href='../../css-properties/border-width.html'>border-width</a></li></ul><li><a href='../../css-properties/bottom.html'>bottom</a></li><li><a href='javascript: void(0);' class='has-arrow'>box-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/box-decoration-break.html'>box-decoration-break</a></li><li><a href='../../css-properties/box-shadow.html'>box-shadow</a></li><li><a href='../../css-properties/box-sizing.html'>box-sizing</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>break-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/break-after.html'>break-after</a></li><li><a href='../../css-properties/break-before.html'>break-before</a></li><li><a href='../../css-properties/break-inside.html'>break-inside</a></li></ul><li><a href='../../css-properties/caption-side.html'>caption-side</a></li><li><a href='../../css-properties/caret-color.html'>caret-color</a></li><li><a href='../../css-properties/clear.html'>clear</a></li><li><a href='../../css-properties/clip-path.html'>clip-path</a></li><li><a href='../../css-properties/color.html'>color</a></li><li><a href='../../css-properties/color-scheme.html'>color-scheme</a></li><li><a href='javascript: void(0);' class='has-arrow'>column-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/column-count.html'>column-count</a></li><li><a href='../../css-properties/column-fill.html'>column-fill</a></li><li><a href='../../css-properties/column-gap.html'>column-gap</a></li><li><a href='../../css-properties/column-rule.html'>column-rule</a></li><li><a href='../../css-properties/column-rule-color.html'>column-rule-color</a></li><li><a href='../../css-properties/column-rule-style.html'>column-rule-style</a></li><li><a href='../../css-properties/column-rule-width.html'>column-rule-width</a></li><li><a href='../../css-properties/column-span.html'>column-span</a></li><li><a href='../../css-properties/column-width.html'>column-width</a></li></ul><li><a href='../../css-properties/columns.html'>columns</a></li><li><a href='javascript: void(0);' class='has-arrow'>contain-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/contain.html'>contain</a></li><li><a href='../../css-properties/contain-intrinsic-block-size.html'>contain-intrinsic-block-size</a></li><li><a href='../../css-properties/contain-intrinsic-height.html'>contain-intrinsic-height</a></li><li><a href='../../css-properties/contain-intrinsic-inline-size.html'>contain-intrinsic-inline-size</a></li><li><a href='../../css-properties/contain-intrinsic-size.html'>contain-intrinsic-size</a></li><li><a href='../../css-properties/contain-intrinsic-width.html'>contain-intrinsic-width</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>container-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/container.html'>container</a></li><li><a href='../../css-properties/container-name.html'>container-name</a></li><li><a href='../../css-properties/container-type.html'>container-type</a></li></ul><li><a href='../../css-properties/content.html'>content</a></li><li><a href='javascript: void(0);' class='has-arrow'>counter-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/counter-increment.html'>counter-increment</a></li><li><a href='../../css-properties/counter-reset.html'>counter-reset</a></li><li><a href='../../css-properties/counter-set.html'>counter-set</a></li></ul><li><a href='../../css-properties/cursor.html'>cursor</a></li><li><a href='../../css-properties/direction.html'>direction</a></li><li><a href='../../css-properties/display.html'>display</a></li><li><a href='../../css-properties/empty-cells.html'>empty-cells</a></li><li><a href='../../css-properties/filter.html'>filter</a></li><li><a href='javascript: void(0);' class='has-arrow'>flex-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/flex.html'>flex</a></li><li><a href='../../css-properties/flex-basis.html'>flex-basis</a></li><li><a href='../../css-properties/flex-direction.html'>flex-direction</a></li><li><a href='../../css-properties/flex-flow.html'>flex-flow</a></li><li><a href='../../css-properties/flex-grow.html'>flex-grow</a></li><li><a href='../../css-properties/flex-shrink.html'>flex-shrink</a></li><li><a href='../../css-properties/flex-wrap.html'>flex-wrap</a></li></ul><li><a href='../../css-properties/float.html'>float</a></li><li><a href='javascript: void(0);' class='has-arrow'>font-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/font.html'>font</a></li><li><a href='../../css-properties/font-family.html'>font-family</a></li><li><a href='../../css-properties/font-feature-settings.html'>font-feature-settings</a></li><li><a href='../../css-properties/font-kerning.html'>font-kerning</a></li><li><a href='../../css-properties/font-language-override.html'>font-language-override</a></li><li><a href='../../css-properties/font-optical-sizing.html'>font-optical-sizing</a></li><li><a href='../../css-properties/font-palette.html'>font-palette</a></li><li><a href='../../css-properties/font-size.html'>font-size</a></li><li><a href='../../css-properties/font-size-adjust.html'>font-size-adjust</a></li><li><a href='../../css-properties/font-stretch.html'>font-stretch</a></li><li><a href='../../css-properties/font-style.html'>font-style</a></li><li><a href='../../css-properties/font-synthesis.html'>font-synthesis</a></li><li><a href='../../css-properties/font-synthesis-small-caps.html'>font-synthesis-small-caps</a></li><li><a href='../../css-properties/font-synthesis-style.html'>font-synthesis-style</a></li><li><a href='../../css-properties/font-synthesis-weight.html'>font-synthesis-weight</a></li><li><a href='../../css-properties/font-variant.html'>font-variant</a></li><li><a href='../../css-properties/font-variant-alternates.html'>font-variant-alternates</a></li><li><a href='../../css-properties/font-variant-caps.html'>font-variant-caps</a></li><li><a href='../../css-properties/font-variant-east-asian.html'>font-variant-east-asian</a></li><li><a href='../../css-properties/font-variant-emoji.html'>font-variant-emoji</a></li><li><a href='../../css-properties/font-variant-ligatures.html'>font-variant-ligatures</a></li><li><a href='../../css-properties/font-variant-numeric.html'>font-variant-numeric</a></li><li><a href='../../css-properties/font-variant-position.html'>font-variant-position</a></li><li><a href='../../css-properties/font-variation-settings.html'>font-variation-settings</a></li><li><a href='../../css-properties/font-weight.html'>font-weight</a></li></ul><li><a href='../../css-properties/forced-color-adjust.html'>forced-color-adjust</a></li><li><a href='../../css-properties/gap.html'>gap</a></li><li><a href='javascript: void(0);' class='has-arrow'>grid-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/grid.html'>grid</a></li><li><a href='../../css-properties/grid-area.html'>grid-area</a></li><li><a href='../../css-properties/grid-auto-columns.html'>grid-auto-columns</a></li><li><a href='../../css-properties/grid-auto-flow.html'>grid-auto-flow</a></li><li><a href='../../css-properties/grid-auto-rows.html'>grid-auto-rows</a></li><li><a href='../../css-properties/grid-column.html'>grid-column</a></li><li><a href='../../css-properties/grid-column-end.html'>grid-column-end</a></li><li><a href='../../css-properties/grid-column-start.html'>grid-column-start</a></li><li><a href='../../css-properties/grid-row.html'>grid-row</a></li><li><a href='../../css-properties/grid-row-end.html'>grid-row-end</a></li><li><a href='../../css-properties/grid-row-start.html'>grid-row-start</a></li><li><a href='../../css-properties/grid-template.html'>grid-template</a></li><li><a href='../../css-properties/grid-template-areas.html'>grid-template-areas</a></li><li><a href='../../css-properties/grid-template-columns.html'>grid-template-columns</a></li><li><a href='../../css-properties/grid-template-rows.html'>grid-template-rows</a></li></ul><li><a href='../../css-properties/hanging-punctuation.html'>hanging-punctuation</a></li><li><a href='../../css-properties/height.html'>height</a></li><li><a href='javascript: void(0);' class='has-arrow'>hyphenate-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/hyphenate-character.html'>hyphenate-character</a></li><li><a href='../../css-properties/hyphenate-limit-chars.html'>hyphenate-limit-chars</a></li></ul><li><a href='../../css-properties/hyphens.html'>hyphens</a></li><li><a href='javascript: void(0);' class='has-arrow'>image-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/image-orientation.html'>image-orientation</a></li><li><a href='../../css-properties/image-rendering.html'>image-rendering</a></li></ul><li><a href='../../css-properties/inline-size.html'>inline-size</a></li><li><a href='javascript: void(0);' class='has-arrow'>inset-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/inset.html'>inset</a></li><li><a href='../../css-properties/inset-block.html'>inset-block</a></li><li><a href='../../css-properties/inset-block-end.html'>inset-block-end</a></li><li><a href='../../css-properties/inset-block-start.html'>inset-block-start</a></li><li><a href='../../css-properties/inset-inline.html'>inset-inline</a></li><li><a href='../../css-properties/inset-inline-end.html'>inset-inline-end</a></li><li><a href='../../css-properties/inset-inline-start.html'>inset-inline-start</a></li></ul><li><a href='../../css-properties/isolation.html'>isolation</a></li><li><a href='javascript: void(0);' class='has-arrow'>justify-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/justify-content.html'>justify-content</a></li><li><a href='../../css-properties/justify-items.html'>justify-items</a></li><li><a href='../../css-properties/justify-self.html'>justify-self</a></li></ul><li><a href='../../css-properties/left.html'>left</a></li><li><a href='../../css-properties/letter-spacing.html'>letter-spacing</a></li><li><a href='javascript: void(0);' class='has-arrow'>line-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/line-break.html'>line-break</a></li><li><a href='../../css-properties/line-height.html'>line-height</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>list-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/list-style.html'>list-style</a></li><li><a href='../../css-properties/list-style-image.html'>list-style-image</a></li><li><a href='../../css-properties/list-style-position.html'>list-style-position</a></li><li><a href='../../css-properties/list-style-type.html'>list-style-type</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>margin-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/margin.html'>margin</a></li><li><a href='../../css-properties/margin-block.html'>margin-block</a></li><li><a href='../../css-properties/margin-block-end.html'>margin-block-end</a></li><li><a href='../../css-properties/margin-block-start.html'>margin-block-start</a></li><li><a href='../../css-properties/margin-bottom.html'>margin-bottom</a></li><li><a href='../../css-properties/margin-inline.html'>margin-inline</a></li><li><a href='../../css-properties/margin-inline-end.html'>margin-inline-end</a></li><li><a href='../../css-properties/margin-inline-start.html'>margin-inline-start</a></li><li><a href='../../css-properties/margin-left.html'>margin-left</a></li><li><a href='../../css-properties/margin-right.html'>margin-right</a></li><li><a href='../../css-properties/margin-top.html'>margin-top</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>math-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/math-depth.html'>math-depth</a></li><li><a href='../../css-properties/math-style.html'>math-style</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>max-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/max-block-size.html'>max-block-size</a></li><li><a href='../../css-properties/max-height.html'>max-height</a></li><li><a href='../../css-properties/max-inline-size.html'>max-inline-size</a></li><li><a href='../../css-properties/max-width.html'>max-width</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>min-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/min-block-size.html'>min-block-size</a></li><li><a href='../../css-properties/min-height.html'>min-height</a></li><li><a href='../../css-properties/min-inline-size.html'>min-inline-size</a></li><li><a href='../../css-properties/min-width.html'>min-width</a></li></ul><li><a href='../../css-properties/mix-blend-mode.html'>mix-blend-mode</a></li><li><a href='javascript: void(0);' class='has-arrow'>object-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/object-fit.html'>object-fit</a></li><li><a href='../../css-properties/object-position.html'>object-position</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>offset-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/offset.html'>offset</a></li><li><a href='../../css-properties/offset-anchor.html'>offset-anchor</a></li><li><a href='../../css-properties/offset-distance.html'>offset-distance</a></li><li><a href='../../css-properties/offset-path.html'>offset-path</a></li><li><a href='../../css-properties/offset-position.html'>offset-position</a></li><li><a href='../../css-properties/offset-rotate.html'>offset-rotate</a></li></ul><li><a href='../../css-properties/opacity.html'>opacity</a></li><li><a href='../../css-properties/order.html'>order</a></li><li><a href='../../css-properties/orphans.html'>orphans</a></li><li><a href='javascript: void(0);' class='has-arrow'>outline-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/outline.html'>outline</a></li><li><a href='../../css-properties/outline-color.html'>outline-color</a></li><li><a href='../../css-properties/outline-offset.html'>outline-offset</a></li><li><a href='../../css-properties/outline-style.html'>outline-style</a></li><li><a href='../../css-properties/outline-width.html'>outline-width</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>overflow-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/overflow.html'>overflow</a></li><li><a href='../../css-properties/overflow-anchor.html'>overflow-anchor</a></li><li><a href='../../css-properties/overflow-block.html'>overflow-block</a></li><li><a href='../../css-properties/overflow-clip-margin.html'>overflow-clip-margin</a></li><li><a href='../../css-properties/overflow-inline.html'>overflow-inline</a></li><li><a href='../../css-properties/overflow-wrap.html'>overflow-wrap</a></li><li><a href='../../css-properties/overflow-x.html'>overflow-x</a></li><li><a href='../../css-properties/overflow-y.html'>overflow-y</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>overscroll-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/overscroll-behavior.html'>overscroll-behavior</a></li><li><a href='../../css-properties/overscroll-behavior-block.html'>overscroll-behavior-block</a></li><li><a href='../../css-properties/overscroll-behavior-inline.html'>overscroll-behavior-inline</a></li><li><a href='../../css-properties/overscroll-behavior-x.html'>overscroll-behavior-x</a></li><li><a href='../../css-properties/overscroll-behavior-y.html'>overscroll-behavior-y</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>padding-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/padding.html'>padding</a></li><li><a href='../../css-properties/padding-block.html'>padding-block</a></li><li><a href='../../css-properties/padding-block-end.html'>padding-block-end</a></li><li><a href='../../css-properties/padding-block-start.html'>padding-block-start</a></li><li><a href='../../css-properties/padding-bottom.html'>padding-bottom</a></li><li><a href='../../css-properties/padding-inline.html'>padding-inline</a></li><li><a href='../../css-properties/padding-inline-end.html'>padding-inline-end</a></li><li><a href='../../css-properties/padding-inline-start.html'>padding-inline-start</a></li><li><a href='../../css-properties/padding-left.html'>padding-left</a></li><li><a href='../../css-properties/padding-right.html'>padding-right</a></li><li><a href='../../css-properties/padding-top.html'>padding-top</a></li></ul><li><a href='../../css-properties/page.html'>page</a></li><li><a href='../../css-properties/paint-order.html'>paint-order</a></li><li><a href='javascript: void(0);' class='has-arrow'>perspective-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/perspective.html'>perspective</a></li><li><a href='../../css-properties/perspective-origin.html'>perspective-origin</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>place-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/place-content.html'>place-content</a></li><li><a href='../../css-properties/place-items.html'>place-items</a></li><li><a href='../../css-properties/place-self.html'>place-self</a></li></ul><li><a href='../../css-properties/pointer-events.html'>pointer-events</a></li><li><a href='../../css-properties/position.html'>position</a></li><li><a href='../../css-properties/print-color-adjust.html'>print-color-adjust</a></li><li><a href='../../css-properties/quotes.html'>quotes</a></li><li><a href='../../css-properties/resize.html'>resize</a></li><li><a href='../../css-properties/right.html'>right</a></li><li><a href='../../css-properties/rotate.html'>rotate</a></li><li><a href='../../css-properties/row-gap.html'>row-gap</a></li><li><a href='javascript: void(0);' class='has-arrow'>ruby-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/ruby-align.html'>ruby-align</a></li><li><a href='../../css-properties/ruby-position.html'>ruby-position</a></li></ul><li><a href='../../css-properties/scale.html'>scale</a></li><li><a href='javascript: void(0);' class='has-arrow'>scroll-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/scroll-behavior.html'>scroll-behavior</a></li><li><a href='../../css-properties/scroll-margin.html'>scroll-margin</a></li><li><a href='../../css-properties/scroll-margin-block.html'>scroll-margin-block</a></li><li><a href='../../css-properties/scroll-margin-block-end.html'>scroll-margin-block-end</a></li><li><a href='../../css-properties/scroll-margin-block-start.html'>scroll-margin-block-start</a></li><li><a href='../../css-properties/scroll-margin-bottom.html'>scroll-margin-bottom</a></li><li><a href='../../css-properties/scroll-margin-inline.html'>scroll-margin-inline</a></li><li><a href='../../css-properties/scroll-margin-inline-end.html'>scroll-margin-inline-end</a></li><li><a href='../../css-properties/scroll-margin-inline-start.html'>scroll-margin-inline-start</a></li><li><a href='../../css-properties/scroll-margin-left.html'>scroll-margin-left</a></li><li><a href='../../css-properties/scroll-margin-right.html'>scroll-margin-right</a></li><li><a href='../../css-properties/scroll-margin-top.html'>scroll-margin-top</a></li><li><a href='../../css-properties/scroll-padding.html'>scroll-padding</a></li><li><a href='../../css-properties/scroll-padding-block.html'>scroll-padding-block</a></li><li><a href='../../css-properties/scroll-padding-block-end.html'>scroll-padding-block-end</a></li><li><a href='../../css-properties/scroll-padding-block-start.html'>scroll-padding-block-start</a></li><li><a href='../../css-properties/scroll-padding-inline.html'>scroll-padding-inline</a></li><li><a href='../../css-properties/scroll-padding-inline-end.html'>scroll-padding-inline-end</a></li><li><a href='../../css-properties/scroll-padding-inline-start.html'>scroll-padding-inline-start</a></li><li><a href='../../css-properties/scroll-snap-align.html'>scroll-snap-align</a></li><li><a href='../../css-properties/scroll-snap-stop.html'>scroll-snap-stop</a></li><li><a href='../../css-properties/scroll-snap-type.html'>scroll-snap-type</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>scrollbar-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/scrollbar-color.html'>scrollbar-color</a></li><li><a href='../../css-properties/scrollbar-gutter.html'>scrollbar-gutter</a></li><li><a href='../../css-properties/scrollbar-width.html'>scrollbar-width</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>shape-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/shape-image-threshold.html'>shape-image-threshold</a></li><li><a href='../../css-properties/shape-margin.html'>shape-margin</a></li><li><a href='../../css-properties/shape-outside.html'>shape-outside</a></li></ul><li><a href='../../css-properties/tab-size.html'>tab-size</a></li><li><a href='../../css-properties/table-layout.html'>table-layout</a></li><li><a href='javascript: void(0);' class='has-arrow'>text-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/text-align.html'>text-align</a></li><li><a href='../../css-properties/text-align-last.html'>text-align-last</a></li><li><a href='../../css-properties/text-combine-upright.html'>text-combine-upright</a></li><li><a href='../../css-properties/text-decoration.html'>text-decoration</a></li><li><a href='../../css-properties/text-decoration-color.html'>text-decoration-color</a></li><li><a href='../../css-properties/text-decoration-line.html'>text-decoration-line</a></li><li><a href='../../css-properties/text-decoration-skip-ink.html'>text-decoration-skip-ink</a></li><li><a href='../../css-properties/text-decoration-style.html'>text-decoration-style</a></li><li><a href='../../css-properties/text-decoration-thickness.html'>text-decoration-thickness</a></li><li><a href='../../css-properties/text-emphasis.html'>text-emphasis</a></li><li><a href='../../css-properties/text-emphasis-color.html'>text-emphasis-color</a></li><li><a href='../../css-properties/text-emphasis-position.html'>text-emphasis-position</a></li><li><a href='../../css-properties/text-emphasis-style.html'>text-emphasis-style</a></li><li><a href='../../css-properties/text-indent.html'>text-indent</a></li><li><a href='../../css-properties/text-justify.html'>text-justify</a></li><li><a href='../../css-properties/text-orientation.html'>text-orientation</a></li><li><a href='../../css-properties/text-overflow.html'>text-overflow</a></li><li><a href='../../css-properties/text-rendering.html'>text-rendering</a></li><li><a href='../../css-properties/text-shadow.html'>text-shadow</a></li><li><a href='../../css-properties/text-transform.html'>text-transform</a></li><li><a href='../../css-properties/text-underline-offset.html'>text-underline-offset</a></li><li><a href='../../css-properties/text-underline-position.html'>text-underline-position</a></li></ul><li><a href='../../css-properties/top.html'>top</a></li><li><a href='../../css-properties/touch-action.html'>touch-action</a></li><li><a href='javascript: void(0);' class='has-arrow'>transform-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/transform.html'>transform</a></li><li><a href='../../css-properties/transform-box.html'>transform-box</a></li><li><a href='../../css-properties/transform-origin.html'>transform-origin</a></li><li><a href='../../css-properties/transform-style.html'>transform-style</a></li></ul><li><a href='javascript: void(0);' class='has-arrow'>transition-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/transition.html'>transition</a></li><li><a href='../../css-properties/transition-delay.html'>transition-delay</a></li><li><a href='../../css-properties/transition-duration.html'>transition-duration</a></li><li><a href='../../css-properties/transition-property.html'>transition-property</a></li><li><a href='../../css-properties/transition-timing-function.html'>transition-timing-function</a></li></ul><li><a href='../../css-properties/translate.html'>translate</a></li><li><a href='../../css-properties/unicode-bidi.html'>unicode-bidi</a></li><li><a href='../../css-properties/user-select.html'>user-select</a></li><li><a href='../../css-properties/vertical-align.html'>vertical-align</a></li><li><a href='../../css-properties/visibility.html'>visibility</a></li><li><a href='../../css-properties/white-space.html'>white-space</a></li><li><a href='../../css-properties/widows.html'>widows</a></li><li><a href='../../css-properties/width.html'>width</a></li><li><a href='../../css-properties/will-change.html'>will-change</a></li><li><a href='javascript: void(0);' class='has-arrow'>word-*</a><ul class='sub-menu' aria-expanded='true'><li><a href='../../css-properties/word-break.html'>word-break</a></li><li><a href='../../css-properties/word-spacing.html'>word-spacing</a></li><li><a href='../../css-properties/word-wrap.html'>word-wrap</a></li></ul><li><a href='../../css-properties/writing-mode.html'>writing-mode</a></li><li><a href='../../css-properties/z-index.html'>z-index</a></li>                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fa-code-branch"></i><span>CSS Pseudo Classes</span></a>
+                                <ul class="sub-menu" aria-expanded="false">
+								<li><a href='../../css-pseudo-class/active.html'>:active</a></li><li><a href='../../css-pseudo-class/any-link.html'>:any-link</a></li><li><a href='../../css-pseudo-class/autofill.html'>:autofill</a></li><li><a href='../../css-pseudo-class/buffering.html'>:buffering</a></li><li><a href='../../css-pseudo-class/checked.html'>:checked</a></li><li><a href='../../css-pseudo-class/current.html'>:current</a></li><li><a href='../../css-pseudo-class/default.html'>:default</a></li><li><a href='../../css-pseudo-class/defined.html'>:defined</a></li><li><a href='../../css-pseudo-class/dir().html'>:dir()</a></li><li><a href='../../css-pseudo-class/disabled.html'>:disabled</a></li><li><a href='../../css-pseudo-class/empty.html'>:empty</a></li><li><a href='../../css-pseudo-class/enabled.html'>:enabled</a></li><li><a href='../../css-pseudo-class/first.html'>:first</a></li><li><a href='../../css-pseudo-class/first-child.html'>:first-child</a></li><li><a href='../../css-pseudo-class/first-of-type.html'>:first-of-type</a></li><li><a href='../../css-pseudo-class/focus.html'>:focus</a></li><li><a href='../../css-pseudo-class/focus-visible.html'>:focus-visible</a></li><li><a href='../../css-pseudo-class/focus-within.html'>:focus-within</a></li><li><a href='../../css-pseudo-class/fullscreen.html'>:fullscreen</a></li><li><a href='../../css-pseudo-class/has().html'>:has()</a></li><li><a href='../../css-pseudo-class/host.html'>:host</a></li><li><a href='../../css-pseudo-class/host().html'>:host()</a></li><li><a href='../../css-pseudo-class/host-context().html'>:host-context()</a></li><li><a href='../../css-pseudo-class/hover.html'>:hover</a></li><li><a href='../../css-pseudo-class/in-range.html'>:in-range</a></li><li><a href='../../css-pseudo-class/indeterminate.html'>:indeterminate</a></li><li><a href='../../css-pseudo-class/invalid.html'>:invalid</a></li><li><a href='../../css-pseudo-class/is().html'>:is()</a></li><li><a href='../../css-pseudo-class/lang.html'>:lang</a></li><li><a href='../../css-pseudo-class/last-child.html'>:last-child</a></li><li><a href='../../css-pseudo-class/last-of-type.html'>:last-of-type</a></li><li><a href='../../css-pseudo-class/left.html'>:left</a></li><li><a href='../../css-pseudo-class/link.html'>:link</a></li><li><a href='../../css-pseudo-class/modal.html'>:modal</a></li><li><a href='../../css-pseudo-class/muted.html'>:muted</a></li><li><a href='../../css-pseudo-class/not().html'>:not()</a></li><li><a href='../../css-pseudo-class/nth-child.html'>:nth-child</a></li><li><a href='../../css-pseudo-class/nth-last-child.html'>:nth-last-child</a></li><li><a href='../../css-pseudo-class/nth-last-of-type.html'>:nth-last-of-type</a></li><li><a href='../../css-pseudo-class/nth-of-type.html'>:nth-of-type</a></li><li><a href='../../css-pseudo-class/only-child.html'>:only-child</a></li><li><a href='../../css-pseudo-class/only-of-type.html'>:only-of-type</a></li><li><a href='../../css-pseudo-class/optional.html'>:optional</a></li><li><a href='../../css-pseudo-class/out-of-range.html'>:out-of-range</a></li><li><a href='../../css-pseudo-class/placeholder-shown.html'>:placeholder-shown</a></li><li><a href='../../css-pseudo-class/read-only.html'>:read-only</a></li><li><a href='../../css-pseudo-class/read-write.html'>:read-write</a></li><li><a href='../../css-pseudo-class/required.html'>:required</a></li><li><a href='../../css-pseudo-class/right.html'>:right</a></li><li><a href='../../css-pseudo-class/root.html'>:root</a></li><li><a href='../../css-pseudo-class/scope.html'>:scope</a></li><li><a href='../../css-pseudo-class/target.html'>:target</a></li><li><a href='../../css-pseudo-class/valid.html'>:valid</a></li><li><a href='../../css-pseudo-class/visited.html'>:visited</a></li><li><a href='../../css-pseudo-class/where().html'>:where()</a></li>                                </ul>
+                            </li>							
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fa-code-merge"></i><span>CSS Pseudo Elements</span></a>
+                                <ul class="sub-menu" aria-expanded="false">
+									<li><a href='../../css-pseudo-class/after.html'>::after</a></li><li><a href='../../css-pseudo-class/backdrop.html'>::backdrop</a></li><li><a href='../../css-pseudo-class/before.html'>::before</a></li><li><a href='../../css-pseudo-class/cue.html'>::cue</a></li><li><a href='../../css-pseudo-class/file-selector-button.html'>::file-selector-button</a></li><li><a href='../../css-pseudo-class/first-letter.html'>::first-letter</a></li><li><a href='../../css-pseudo-class/first-line.html'>::first-line</a></li><li><a href='../../css-pseudo-class/marker.html'>::marker</a></li><li><a href='../../css-pseudo-class/part().html'>::part()</a></li><li><a href='../../css-pseudo-class/placeholder.html'>::placeholder</a></li><li><a href='../../css-pseudo-class/selection.html'>::selection</a></li><li><a href='../../css-pseudo-class/slotted().html'>::slotted()</a></li>                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"><i class="fa-code1"></i><span>HTML References</span></a>
+                                <ul class="sub-menu" aria-expanded="false">	
+									<li><a href='javascript: void(0);' class='has-arrow'>HTML Event Attribues</a>
+									<ul class='sub-menu' aria-expanded='true'>
+									<li><a href='../../html-event-attributes/onabort.html'>onabort</a></li><li><a href='../../html-event-attributes/onafterprint.html'>onafterprint</a></li><li><a href='../../html-event-attributes/onbeforeprint.html'>onbeforeprint</a></li><li><a href='../../html-event-attributes/onbeforeunload.html'>onbeforeunload</a></li><li><a href='../../html-event-attributes/onblur.html'>onblur</a></li><li><a href='../../html-event-attributes/oncanplay.html'>oncanplay</a></li><li><a href='../../html-event-attributes/oncanplaythrough.html'>oncanplaythrough</a></li><li><a href='../../html-event-attributes/onchange.html'>onchange</a></li><li><a href='../../html-event-attributes/onclick.html'>onclick</a></li><li><a href='../../html-event-attributes/oncontextmenu.html'>oncontextmenu</a></li><li><a href='../../html-event-attributes/oncopy.html'>oncopy</a></li><li><a href='../../html-event-attributes/oncut.html'>oncut</a></li><li><a href='../../html-event-attributes/ondblclick.html'>ondblclick</a></li><li><a href='../../html-event-attributes/ondrag.html'>ondrag</a></li><li><a href='../../html-event-attributes/ondragend.html'>ondragend</a></li><li><a href='../../html-event-attributes/ondragenter.html'>ondragenter</a></li><li><a href='../../html-event-attributes/ondragleave.html'>ondragleave</a></li><li><a href='../../html-event-attributes/ondragover.html'>ondragover</a></li><li><a href='../../html-event-attributes/ondragstart.html'>ondragstart</a></li><li><a href='../../html-event-attributes/ondrop.html'>ondrop</a></li><li><a href='../../html-event-attributes/ondurationchange.html'>ondurationchange</a></li><li><a href='../../html-event-attributes/onemptied.html'>onemptied</a></li><li><a href='../../html-event-attributes/onended.html'>onended</a></li><li><a href='../../html-event-attributes/onerror.html'>onerror</a></li><li><a href='../../html-event-attributes/onfocus.html'>onfocus</a></li><li><a href='../../html-event-attributes/onhaschange.html'>onhaschange</a></li><li><a href='../../html-event-attributes/oninput.html'>oninput</a></li><li><a href='../../html-event-attributes/oninvalid.html'>oninvalid</a></li><li><a href='../../html-event-attributes/onkeydown.html'>onkeydown</a></li><li><a href='../../html-event-attributes/onkeypress.html'>onkeypress</a></li><li><a href='../../html-event-attributes/onkeyup.html'>onkeyup</a></li><li><a href='../../html-event-attributes/onload.html'>onload</a></li><li><a href='../../html-event-attributes/onloadeddata.html'>onloadeddata</a></li><li><a href='../../html-event-attributes/onloadedmetadata.html'>onloadedmetadata</a></li><li><a href='../../html-event-attributes/onloadstart.html'>onloadstart</a></li><li><a href='../../html-event-attributes/onmessage.html'>onmessage</a></li><li><a href='../../html-event-attributes/onmousedown.html'>onmousedown</a></li><li><a href='../../html-event-attributes/onmousemove.html'>onmousemove</a></li><li><a href='../../html-event-attributes/onmouseout.html'>onmouseout</a></li><li><a href='../../html-event-attributes/onmouseover.html'>onmouseover</a></li><li><a href='../../html-event-attributes/onmouseup.html'>onmouseup</a></li><li><a href='../../html-event-attributes/onmousewheel.html'>onmousewheel</a></li><li><a href='../../html-event-attributes/onoffline.html'>onoffline</a></li><li><a href='../../html-event-attributes/ononline.html'>ononline</a></li><li><a href='../../html-event-attributes/onpagehide.html'>onpagehide</a></li><li><a href='../../html-event-attributes/onpageshow.html'>onpageshow</a></li><li><a href='../../html-event-attributes/onpaste.html'>onpaste</a></li><li><a href='../../html-event-attributes/onpause.html'>onpause</a></li><li><a href='../../html-event-attributes/onplay.html'>onplay</a></li><li><a href='../../html-event-attributes/onplaying.html'>onplaying</a></li><li><a href='../../html-event-attributes/onpopstate.html'>onpopstate</a></li><li><a href='../../html-event-attributes/onprogress.html'>onprogress</a></li><li><a href='../../html-event-attributes/onratechange.html'>onratechange</a></li><li><a href='../../html-event-attributes/onreadystatechange.html'>onreadystatechange</a></li><li><a href='../../html-event-attributes/onreset.html'>onreset</a></li><li><a href='../../html-event-attributes/onresize.html'>onresize</a></li><li><a href='../../html-event-attributes/onscroll.html'>onscroll</a></li><li><a href='../../html-event-attributes/onsearch.html'>onsearch</a></li><li><a href='../../html-event-attributes/onseeked.html'>onseeked</a></li><li><a href='../../html-event-attributes/onseeking.html'>onseeking</a></li><li><a href='../../html-event-attributes/onselect.html'>onselect</a></li><li><a href='../../html-event-attributes/onshow.html'>onshow</a></li><li><a href='../../html-event-attributes/onstalled.html'>onstalled</a></li><li><a href='../../html-event-attributes/onstorage.html'>onstorage</a></li><li><a href='../../html-event-attributes/onsubmit.html'>onsubmit</a></li><li><a href='../../html-event-attributes/onsuspend.html'>onsuspend</a></li><li><a href='../../html-event-attributes/ontimeupdate.html'>ontimeupdate</a></li><li><a href='../../html-event-attributes/ontoggle.html'>ontoggle</a></li><li><a href='../../html-event-attributes/ontouchcancel.html'>ontouchcancel</a></li><li><a href='../../html-event-attributes/ontouchend.html'>ontouchend</a></li><li><a href='../../html-event-attributes/ontouchmove.html'>ontouchmove</a></li><li><a href='../../html-event-attributes/ontouchstart.html'>ontouchstart</a></li><li><a href='../../html-event-attributes/onunload.html'>onunload</a></li><li><a href='../../html-event-attributes/onvolumechange.html'>onvolumechange</a></li><li><a href='../../html-event-attributes/onwaiting.html'>onwaiting</a></li><li><a href='../../html-event-attributes/onwheel.html'>onwheel</a></li>									</ul></li>
+									<li><a href='javascript: void(0);' class='has-arrow'>HTML Global Attributes</a>
+									<ul class='sub-menu' aria-expanded='true'>
+									<li><a href='../../html-global-attributes/accesskey.html'>accesskey</a></li><li><a href='../../html-global-attributes/class.html'>class</a></li><li><a href='../../html-global-attributes/contenteditable.html'>contenteditable</a></li><li><a href='../../html-global-attributes/data.html'>data</a></li><li><a href='../../html-global-attributes/dir.html'>dir</a></li><li><a href='../../html-global-attributes/draggable.html'>draggable</a></li><li><a href='../../html-global-attributes/hidden.html'>hidden</a></li><li><a href='../../html-global-attributes/id.html'>id</a></li><li><a href='../../html-global-attributes/lang.html'>lang</a></li><li><a href='../../html-global-attributes/spellcheck.html'>spellcheck</a></li><li><a href='../../html-global-attributes/style.html'>style</a></li><li><a href='../../html-global-attributes/tabindex.html'>tabindex</a></li><li><a href='../../html-global-attributes/title.html'>title</a></li><li><a href='../../html-global-attributes/translate.html'>translate</a></li>									</ul></li>
+									<li><a href='javascript: void(0);' class='has-arrow'>HTML Tags</a>
+									<ul class='sub-menu' aria-expanded='true'>
+									<li><a href='../../html-tags/tag-a.html'>&lt;a&gt;</a></li><li><a href='../../html-tags/tag-abbr.html'>&lt;abbr&gt;</a></li><li><a href='../../html-tags/tag-address.html'>&lt;address&gt;</a></li><li><a href='../../html-tags/tag-area.html'>&lt;area&gt;</a></li><li><a href='../../html-tags/tag-article.html'>&lt;article&gt;</a></li><li><a href='../../html-tags/tag-aside.html'>&lt;aside&gt;</a></li><li><a href='../../html-tags/tag-audio.html'>&lt;audio&gt;</a></li><li><a href='../../html-tags/tag-b.html'>&lt;b&gt;</a></li><li><a href='../../html-tags/tag-base.html'>&lt;base&gt;</a></li><li><a href='../../html-tags/tag-bdi.html'>&lt;bdi&gt;</a></li><li><a href='../../html-tags/tag-bdo.html'>&lt;bdo&gt;</a></li><li><a href='../../html-tags/tag-blockquote.html'>&lt;blockquote&gt;</a></li><li><a href='../../html-tags/tag-body.html'>&lt;body&gt;</a></li><li><a href='../../html-tags/tag-br.html'>&lt;br&gt;</a></li><li><a href='../../html-tags/tag-button.html'>&lt;button&gt;</a></li><li><a href='../../html-tags/tag-canvas.html'>&lt;canvas&gt;</a></li><li><a href='../../html-tags/tag-caption.html'>&lt;caption&gt;</a></li><li><a href='../../html-tags/tag-cite.html'>&lt;cite&gt;</a></li><li><a href='../../html-tags/tag-code.html'>&lt;code&gt;</a></li><li><a href='../../html-tags/tag-col.html'>&lt;col&gt;</a></li><li><a href='../../html-tags/tag-colgroup.html'>&lt;colgroup&gt;</a></li><li><a href='../../html-tags/tag-comment.html'>&lt;comment&gt;</a></li><li><a href='../../html-tags/tag-data.html'>&lt;data&gt;</a></li><li><a href='../../html-tags/tag-datalist.html'>&lt;datalist&gt;</a></li><li><a href='../../html-tags/tag-dd.html'>&lt;dd&gt;</a></li><li><a href='../../html-tags/tag-del.html'>&lt;del&gt;</a></li><li><a href='../../html-tags/tag-details.html'>&lt;details&gt;</a></li><li><a href='../../html-tags/tag-dfn.html'>&lt;dfn&gt;</a></li><li><a href='../../html-tags/tag-dialog.html'>&lt;dialog&gt;</a></li><li><a href='../../html-tags/tag-div.html'>&lt;div&gt;</a></li><li><a href='../../html-tags/tag-dl.html'>&lt;dl&gt;</a></li><li><a href='../../html-tags/tag-doctype.html'>&lt;doctype&gt;</a></li><li><a href='../../html-tags/tag-dt.html'>&lt;dt&gt;</a></li><li><a href='../../html-tags/tag-em.html'>&lt;em&gt;</a></li><li><a href='../../html-tags/tag-embed.html'>&lt;embed&gt;</a></li><li><a href='../../html-tags/tag-fieldset.html'>&lt;fieldset&gt;</a></li><li><a href='../../html-tags/tag-figcaption.html'>&lt;figcaption&gt;</a></li><li><a href='../../html-tags/tag-figure.html'>&lt;figure&gt;</a></li><li><a href='../../html-tags/tag-footer.html'>&lt;footer&gt;</a></li><li><a href='../../html-tags/tag-form.html'>&lt;form&gt;</a></li><li><a href='../../html-tags/tag-h1.html'>&lt;h1&gt;</a></li><li><a href='../../html-tags/tag-h2.html'>&lt;h2&gt;</a></li><li><a href='../../html-tags/tag-h3.html'>&lt;h3&gt;</a></li><li><a href='../../html-tags/tag-h4.html'>&lt;h4&gt;</a></li><li><a href='../../html-tags/tag-h5.html'>&lt;h5&gt;</a></li><li><a href='../../html-tags/tag-h6.html'>&lt;h6&gt;</a></li><li><a href='../../html-tags/tag-head.html'>&lt;head&gt;</a></li><li><a href='../../html-tags/tag-header.html'>&lt;header&gt;</a></li><li><a href='../../html-tags/tag-hr.html'>&lt;hr&gt;</a></li><li><a href='../../html-tags/tag-html.html'>&lt;html&gt;</a></li><li><a href='../../html-tags/tag-i.html'>&lt;i&gt;</a></li><li><a href='../../html-tags/tag-iframe.html'>&lt;iframe&gt;</a></li><li><a href='../../html-tags/tag-img.html'>&lt;img&gt;</a></li><li><a href='../../html-tags/tag-input.html'>&lt;input&gt;</a></li><li><a href='../../html-tags/tag-ins.html'>&lt;ins&gt;</a></li><li><a href='../../html-tags/tag-kbd.html'>&lt;kbd&gt;</a></li><li><a href='../../html-tags/tag-label.html'>&lt;label&gt;</a></li><li><a href='../../html-tags/tag-legend.html'>&lt;legend&gt;</a></li><li><a href='../../html-tags/tag-li.html'>&lt;li&gt;</a></li><li><a href='../../html-tags/tag-link.html'>&lt;link&gt;</a></li><li><a href='../../html-tags/tag-main.html'>&lt;main&gt;</a></li><li><a href='../../html-tags/tag-map.html'>&lt;map&gt;</a></li><li><a href='../../html-tags/tag-mark.html'>&lt;mark&gt;</a></li><li><a href='../../html-tags/tag-menu.html'>&lt;menu&gt;</a></li><li><a href='../../html-tags/tag-meta.html'>&lt;meta&gt;</a></li><li><a href='../../html-tags/tag-meter.html'>&lt;meter&gt;</a></li><li><a href='../../html-tags/tag-nav.html'>&lt;nav&gt;</a></li><li><a href='../../html-tags/tag-noscript.html'>&lt;noscript&gt;</a></li><li><a href='../../html-tags/tag-object.html'>&lt;object&gt;</a></li><li><a href='../../html-tags/tag-ol.html'>&lt;ol&gt;</a></li><li><a href='../../html-tags/tag-optgroup.html'>&lt;optgroup&gt;</a></li><li><a href='../../html-tags/tag-option.html'>&lt;option&gt;</a></li><li><a href='../../html-tags/tag-output.html'>&lt;output&gt;</a></li><li><a href='../../html-tags/tag-p.html'>&lt;p&gt;</a></li><li><a href='../../html-tags/tag-picture.html'>&lt;picture&gt;</a></li><li><a href='../../html-tags/tag-pre.html'>&lt;pre&gt;</a></li><li><a href='../../html-tags/tag-progress.html'>&lt;progress&gt;</a></li><li><a href='../../html-tags/tag-q.html'>&lt;q&gt;</a></li><li><a href='../../html-tags/tag-rp.html'>&lt;rp&gt;</a></li><li><a href='../../html-tags/tag-rt.html'>&lt;rt&gt;</a></li><li><a href='../../html-tags/tag-ruby.html'>&lt;ruby&gt;</a></li><li><a href='../../html-tags/tag-s.html'>&lt;s&gt;</a></li><li><a href='../../html-tags/tag-samp.html'>&lt;samp&gt;</a></li><li><a href='../../html-tags/tag-script.html'>&lt;script&gt;</a></li><li><a href='../../html-tags/tag-section.html'>&lt;section&gt;</a></li><li><a href='../../html-tags/tag-select.html'>&lt;select&gt;</a></li><li><a href='../../html-tags/tag-slot.html'>&lt;slot&gt;</a></li><li><a href='../../html-tags/tag-small.html'>&lt;small&gt;</a></li><li><a href='../../html-tags/tag-source.html'>&lt;source&gt;</a></li><li><a href='../../html-tags/tag-span.html'>&lt;span&gt;</a></li><li><a href='../../html-tags/tag-strong.html'>&lt;strong&gt;</a></li><li><a href='../../html-tags/tag-style.html'>&lt;style&gt;</a></li><li><a href='../../html-tags/tag-sub.html'>&lt;sub&gt;</a></li><li><a href='../../html-tags/tag-summary.html'>&lt;summary&gt;</a></li><li><a href='../../html-tags/tag-sup.html'>&lt;sup&gt;</a></li><li><a href='../../html-tags/tag-table.html'>&lt;table&gt;</a></li><li><a href='../../html-tags/tag-tbody.html'>&lt;tbody&gt;</a></li><li><a href='../../html-tags/tag-td.html'>&lt;td&gt;</a></li><li><a href='../../html-tags/tag-template.html'>&lt;template&gt;</a></li><li><a href='../../html-tags/tag-textarea.html'>&lt;textarea&gt;</a></li><li><a href='../../html-tags/tag-tfoot.html'>&lt;tfoot&gt;</a></li><li><a href='../../html-tags/tag-th.html'>&lt;th&gt;</a></li><li><a href='../../html-tags/tag-thead.html'>&lt;thead&gt;</a></li><li><a href='../../html-tags/tag-time.html'>&lt;time&gt;</a></li><li><a href='../../html-tags/tag-title.html'>&lt;title&gt;</a></li><li><a href='../../html-tags/tag-tr.html'>&lt;tr&gt;</a></li><li><a href='../../html-tags/tag-track.html'>&lt;track&gt;</a></li><li><a href='../../html-tags/tag-u.html'>&lt;u&gt;</a></li><li><a href='../../html-tags/tag-ul.html'>&lt;ul&gt;</a></li><li><a href='../../html-tags/tag-var.html'>&lt;var&gt;</a></li><li><a href='../../html-tags/tag-video.html'>&lt;video&gt;</a></li><li><a href='../../html-tags/tag-wbr.html'>&lt;wbr&gt;</a></li>									</ul></li>		
+                                </ul>
+                            </li>	
+                        </ul>
+
+                        <div class="card sidebar-alert border-0 text-center mx-4 mb-0 mt-5">
+                            <div class="card-body">
+                                <img src="../../assets/images/giftbox.png" alt="">
+                                <div class="mt-4">
+                                    <h5 class="alertcard-title font-size-16">Support Us</h5>
+                                    <p class="font-size-13">If you would like to support CSSPortal, please consider making a small donation.</p>
+                                    <a href="../../donate.html" class="btn btn-primary mt-2">Donations</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><style>
+pre {margin-bottom:20px!important;}
+</style>
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                    <h1 class="mb-sm-0 font-size-24">CSS Notification Boxes</h1>
+
+                                    <div class="page-title-right">
+										<button class="btn btn-outline-primary btn-rounded me-2" type="button" data-bs-toggle="modal" data-bs-target=".modal-share"><i class="fas fa-share-alt me-2"></i>Share</button>
+										<button onclick="addFav('CSS Notification Boxes')" id="btnFav" class="btn btn-outline-primary btn-rounded" type="button"><i class="fas fa-heart me-2"></i>Add to Favorites</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+									<div class="g_top text-center my-3">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- CSS Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1356719463849900"
+     data-ad-slot="5275015068"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+			
+				
+	<article id="post-106" class="post-106 post type-post status-publish format-standard hentry category-css_blog wpautop">
+				<header class="entry-header">
+									
+		<div class="entry-meta-top">
+			              <div class="row position-relative g-0 align-items-center border-top border-bottom mb-4">
+                <div class="col-md-12 py-3 pe-md-3">
+                  <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="d-flex align-items-center me-grid-gutter">
+                      <div class="ps-2">
+                        <div class="text-nowrap">
+                          <div class="meta-link">Published on <time class="entry-date date updated" datetime="2013-05-05T04:47:52+00:00" pubdate>May 5, 2013</time><span class="meta-divider"></span>By Rene Spronk
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>		</div><!-- .entry-meta -->
+						
+					</header><!-- .entry-header -->
+
+
+				<!--<h3 class="entry-title">CSS Notification Boxes</h3>-->
+		<!--ads here-->
+			<p>Today we are going to look at the design of CSS Notification Boxes. Notification or Alert Boxes are a great way to inform the user of a variety of messages, such as: error messages, success messages, warning messages and general notification. A great example for using these notification boxes would be for user registrations for a website, if for example the user made an error during registration, you could use an alert box to inform the user of the particular error. If however everything was correct, you could alert the user that registration has succeeded and that they can now login.<span id="more-106"></span></p>
+<p>In this tutorial, we are going to look at how to create a range of the most popular notification boxes, today we are going to focus on the following:</p>
+<p>1. Error Box<br />
+2. Success Box<br />
+3. Warning Box<br />
+4. Notice Box<br />
+<img src="../wp-content/uploads/2013/05/alertboxes.png" alt="CSS Notification Boxes" width="400" height="162" class="aligncenter size-full wp-image-126" /></p>
+<h3>Step 1:</h3>
+<p>First we will create the basic layout for each box.</p>
+<pre class="language-css"><code>.alert-box {
+    color:#555;
+    border-radius:10px;
+    font-family:Tahoma,Geneva,Arial,sans-serif;font-size:11px;
+    padding:10px 10px 10px 36px;
+    margin:10px;
+}</code></pre>
+<p>Lets take a look at each line:<br />
+<code>color:#555;</code> &#8211; This is used for the text color.<br />
+<code>border-radius:10px;</code> &#8211; We will give the borders a radius of 10px.<br />
+<code>font-family:...</code> &#8211; Is the name of the font that we will be using.<br />
+<code>padding:10px 10px 10px 36px;</code> &#8211; Padding inside the box, 10px for Top, Right and Bottom, 36px for Left.<br />
+<code>margin:10px;</code> &#8211; The margin around the box will be 10px.</p>
+<h3>Step 2:</h3>
+<p>In each box there will be a span property notifying the user of the alert.</p>
+<pre class="language-css"><code>.alert-box span {
+    font-weight:bold;
+    text-transform:uppercase;
+}</code></pre>
+<p>Lets take a look at each line:<br />
+<code>font-weight:bold;</code> &#8211; All the text inside the span property will be bold.<br />
+<code>text-transform:uppercase;</code> &#8211; This will transform the text to uppercase.</p>
+<h3>Step 3:</h3>
+<p>Now lets add some color and icons to each box.</p>
+<pre class="language-css"><code>.error {
+    background:#ffecec url('images/error.png') no-repeat 10px 50%;
+    border:1px solid #f5aca6;
+}
+.success {
+    background:#e9ffd9 url('images/success.png') no-repeat 10px 50%;
+    border:1px solid #a6ca8a;
+}
+.warning {
+    background:#fff8c4 url('images/warning.png') no-repeat 10px 50%;
+    border:1px solid #f2c779;
+}
+.notice {
+    background:#e3f7fc url('images/notice.png') no-repeat 10px 50%;
+    border:1px solid #8ed9f6;
+}</code></pre>
+<p>Lets take a look at each line:<br />
+<code>background:...</code> &#8211; Specifies the background color and the icon used for the alert<br />
+<code>border:...</code> &#8211; Specifies the border width, style and color.</p>
+<h3>Step 4:</h3>
+<p>Lastly we need some HTML code to display the alert boxes.</p>
+<pre class="language-html"><code><xmp><div class="alert-box error"><span>error: </span>Write your error message here.</div>
+<div class="alert-box success"><span>success: </span>Write your success message here.</div>
+<div class="alert-box warning"><span>warning: </span>Write your warning message here.</div>
+<div class="alert-box notice"><span>notice: </span>Write your notice message here.</div></xmp></code></pre>
+<h3>The Result:</h3>
+<p>You can check out the final result by clicking the button below. Or you can download the demo files.</p>
+<p><a target="_blank" class="btn btn-primary" href="../../tryit/indexf912.html?file=blog/notification">Demo</a></p>
+<p><a class="btn btn-primary" href="../wp-content/uploads/2013/05/notification.zip">Download</a></p>
+					
+		<footerblog class="entry-meta">
+			
+			
+					</footerblog><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				
+			
+									<div class="g_top text-center my-3">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- CSS Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1356719463849900"
+     data-ad-slot="5275015068"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<div class="modal fade modal-share" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Share this Page</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<p>If you have enjoyed using this tool, please consider sharing this page with other users, just click on your preferred social media link or copy the webpage from the link below.</p>
+
+
+				<ul class="list-inline mb-0 text-center">
+					<li class="list-inline-item">
+						<a href="https://www.facebook.com/share.php?u=https%3A%2F%2Fwww.cssportal.com%2Fblog%2Fcss-notification-boxes%2F&amp;t=%20-%20CSSPortal.com" rel="_blank" 
+							data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"
+							class="social-list-item bg-primary text-white border-primary">
+							<i class="fa-facebook-square font-size-24"></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://twitter.com/intent/tweet?text=%20-%20CSSPortal.com%20-%20https%3A%2F%2Fwww.cssportal.com%2Fblog%2Fcss-notification-boxes%2F%20" rel="_blank" 
+							data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"
+							class="social-list-item bg-primary text-white border-primary">
+							<i class="fa-twitter-square font-size-24"></i>
+						</a>
+					</li>
+					<!--<li class="list-inline-item">
+						<a href="https://www.google.com/bookmarks/mark?op=edit&amp;bkmk=https%3A%2F%2Fwww.cssportal.com%2Fblog%2Fcss-notification-boxes%2F&amp;title=%20-%20CSSPortal.com&amp;annotation=" rel="_blank" 
+							data-bs-toggle="tooltip" data-bs-placement="top" title="Google"
+							class="social-list-item bg-primary text-white border-primary">
+							<i class="fa-google font-size-24"></i>
+						</a>
+					</li>-->
+					<li class="list-inline-item">
+						<a href="https://reddit.com/submit?url=https%3A%2F%2Fwww.cssportal.com%2Fblog%2Fcss-notification-boxes%2F&amp;title=%20-%20CSSPortal.com" rel="_blank" 
+							data-bs-toggle="tooltip" data-bs-placement="top" title="Reddit"
+							class="social-list-item bg-primary text-white border-primary">
+							<i class="fa-reddit-square font-size-24"></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.cssportal.com%2Fblog%2Fcss-notification-boxes%2F&amp;title=%20-%20CSSPortal.com&amp;summary=" rel="_blank" 
+							data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"
+							class="social-list-item bg-primary text-white border-primary">
+							<i class="fa-linkedin-square font-size-24"></i>
+						</a>
+					</li>
+				</ul>
+
+				<div class="input-group my-3" style="width:100%">
+				  <span class="input-group-text">URL</span>
+				  <input class="form-control" type="text" id="sharePage" value="index.html" />
+				  <span class="input-group-text"><i data-clipboard-target="#sharePage" class="far fa-clipboard clipboard" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy"></i></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		<style type="text/css">
+							.pgntn-page-pagination {
+					text-align: left !important;
+				}
+				.pgntn-page-pagination-block {
+					width: 60% !important;
+					padding: 0 0 0 0;
+									}
+				.pgntn-page-pagination a {
+					color: #1e14ca !important;
+					background-color: #ffffff !important;
+					text-decoration: none !important;
+					border: none !important;
+											-webkit-border-radius: 4px;
+						-moz-border-radius: 4px;
+						border-radius: 4px;
+									}
+				.pgntn-page-pagination a:hover {
+					color: #000 !important;
+				}
+				.pgntn-page-pagination-intro,
+				.pgntn-page-pagination .current {
+					background-color: #efefef !important;
+					color: #000 !important;
+					border: none !important;
+											-webkit-border-radius: 4px;
+						-moz-border-radius: 4px;
+						border-radius: 4px;
+									}
+				.archive #nav-above,
+					.archive #nav-below,
+					.search #nav-above,
+					.search #nav-below,
+					.blog #nav-below,
+					.blog #nav-above,
+					.navigation.paging-navigation,
+					.navigation.pagination,
+					.pagination.paging-pagination,
+					.pagination.pagination,
+					.pagination.loop-pagination,
+					.bicubic-nav-link,
+					#page-nav,
+					.camp-paging,
+					#reposter_nav-pages,
+					.unity-post-pagination,
+					.wordpost_content .nav_post_link,.page-link,
+					.post-nav-links,
+					.page-links,#comments .navigation,
+					#comment-nav-above,
+					#comment-nav-below,
+					#nav-single,
+					.navigation.comment-navigation,
+					comment-pagination {
+						display: none !important;
+					}
+					.single-gallery .pagination.gllrpr_pagination {
+						display: block !important;
+					}		</style>
+		<link rel='stylesheet' id='pgntn_stylesheet-css'  href='../wp-content/plugins/pagination/css/nav-style9632.css?ver=1.2.3' type='text/css' media='all' />
+                <div class="page-content mb-3" style="margin-top:-140px">
+                    <div class="container-fluid">
+						<div class="list-group">
+							<li class="list-group-item text-center active">Sponsors</li>
+							<a class="list-group-item list-group-item-action flex-column align-items-start" href="https://webtoapp.design/?utm_source=cssportal&amp;utm_medium=banner&amp;utm_campaign=cssportal_banner" target="_blank" rel="nofollow"><span class="text-primary">Turn Website into App</span> - <span>Convert your website into an app for Android and iOS. Updates automatically.</span></a>
+							<a class="list-group-item list-group-item-action flex-column align-items-start" href="https://www.charactercodes.net/" target="_blank"><span class="text-primary">Unicode Characters &amp; Emojis</span> - <span>Search all Unicode characters and emojis plus other tools.</span></a>
+							<a class="list-group-item list-group-item-action flex-column align-items-start" href="https://zuziko.com/" target="_blank" rel="nofollow"><span class="text-primary">Learn Wordpress</span> - <span>Wordpress hosting. Theme and plugin reviews. Wordpress development tips.</span></a>
+							<a class="list-group-item list-group-item-action flex-column align-items-start" href="https://www.templatic.com/" target="_blank" rel="nofollow"><span class="text-primary">Templatic</span> - <span>Wordpress Themes, Cloud Hosting, Backups and Webmaster Tips.</span></a>
+							<a class="list-group-item list-group-item-action flex-column align-items-start" href="https://www.a2hosting.com/web-hosting?utm_campaign=grassroots&amp;utm_medium=nner&amp;utm_source=cssportal.com" target="_blank" rel="nofollow"><span class="text-primary">A2 Web Hosting</span> - <span>Shared hosting, Reseller hosting, Cloud hosting, Dedicated hosting.</span></a>
+							<a class="list-group-item list-group-item-action flex-column align-items-start" href="https://www.passwordpal.net/" target="_blank" rel="nofollow"><span class="text-primary">Online Password Manager</span> - <span>Access your passwords from any computer, no need to remember all of your passwords.</span></a>
+							<a class="list-group-item list-group-item-action flex-column align-items-start bg-light-subtle" href="../../advertise.html" rel="nofollow"><span class="text-primary">Advertise Here</span> - <span>Advertise your company and products here!</span></a>
+						</div>
+					</div>
+				</div>                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>Copyright &copy; 2023 - CSSPortal.com All rights reserved.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-end d-none d-sm-block">
+									<a href="../../privacy.html">Privacy Policy</a> | 
+									<a href="../../contact.html">Contact Us</a> | 
+									<a href="../../donate.html">Donations</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+
+        </div>
+
+<div class="right-bar">
+    <div data-simplebar class="h-100">
+        <div class="rightbar-title d-flex align-items-center p-3">
+
+            <h5 class="m-0 me-2">Favorites</h5>
+
+            <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                <i class="fa-close"></i>
+            </a>
+        </div>
+
+        <hr class="m-0">
+
+        <div class="p-4">
+
+		<ul id="fav_results" class="list-unstyled mb-0 font-size-16"></ul>
+		<p class="alert alert-info mt-2">Your favorites are stored in your browsers cache. If you clear your browsing data, your favorites will be deleted also.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="rightbar-overlay"></div>
+
+        <script src="../../assets/js/jquery/jquery.min.js"></script>
+        <script src="../../assets/js/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/metismenu/metisMenu.min.js"></script>
+        <script src="../../assets/js/simplebar/simplebar.min.js"></script>
+		<script src="../../assets/js/clipboard.min.js"></script>
+		<script src="../../assets/js/prism.js"></script>
+        <script src="../../assets/js/app.js"></script>
+			
+    </body>
+
+
+<!-- Mirrored from www.cssportal.com/blog/css-notification-boxes/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 22:28:42 GMT -->
+</html>
+
+<!-- Page cached by LiteSpeed Cache 5.6 on 2023-11-19 08:54:48 -->

@@ -1,0 +1,21 @@
+﻿.form-control:focus {
+  outline: none;
+  box-shadow:none !important;
+  border:1px solid #ccc;
+}
+
+.inputCSS {
+	width: 100%;
+	height: 250px !important;
+	border: 1px solid #ccc;
+	border-radius:0;
+	font-family:monospace;
+	resize: none;
+}
+
+#ifrPreview1 {
+	background-color: #F1F5F5;
+	border: 1px dashed #C5D3D3;
+	width:100%;
+	height: 250px;
+}

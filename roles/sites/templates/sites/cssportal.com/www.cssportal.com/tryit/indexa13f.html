@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.cssportal.com/tryit/index.php?file=blog/accordion by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 22:28:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>CSSPortal Tryit Examples</title>
+	<meta name="description" content="CSSPortal has many examples and resources to learn from. Come on over and check it out!" />
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style/codemirror.css" />
+	<link rel="stylesheet" href="style/custom.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/codemirror.js"></script>
+	<script type="text/javascript" src="js/utility.js"></script>
+	<script src="js/xml.js"></script>    
+	<script src="js/javascript.js"></script>
+	<script src="js/css.js"></script>
+	<script src="js/htmlmixed.js"></script>
+	<script src="js/active-line.js"></script>
+	<script type="text/javascript" src="js/engine.js"></script>
+
+	<style type="text/css">
+		html{overflow:auto;overflow-x:hidden;}
+		.CodeMirror{font-size: 12px; line-height: 16px; font-family:MenschRegular,Menlo,Monaco,consolas,monospace;background: url("img/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+	</style>
+	</head>
+<body>
+        <table>
+            <tr>
+                <td class="header-wrapper">
+                    <div class="header">
+                        <div class="logo-box">
+                        <div class="navbar-brand-box">
+                            <a href="../index.html" class="logo logo-light">
+                                <span class="logo-lg">
+                                    <img src="../assets/images/cssicon.png" alt="" height="36"> <span class="logo-txt">CSS Portal</span>
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="control-bar">
+                            <div class="top_ad">
+                            <div class="buttons">
+                                <input type="submit" onclick="startit()" value="Edit and Click Me &raquo;" />
+                            </div>                            
+                            </div>
+                        </div>
+                    <div class="clear">&nbsp;</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="frame-box">
+                        <tr>
+                            <td id="left-pane">
+			      				<div class="outer-area">
+                                	<span class="show-right-pane">&nbsp;</span>
+									<div class="inner-area">
+                                		<textarea id="code" name="code"><!DOCTYPE html>
+<html>
+  <head>
+	<style>
+	* {
+		padding:0;margin:0;border:none;list-style-type:none;
+	}
+	.accordion {
+	    width:250px;
+	    margin:20px;
+	    font: 12px Verdana, Geneva, sans-serif;
+	    border:1px solid #ccc;
+	    border-radius:5px;
+	}
+	.accordion .acc-content {
+	    height: 0;
+	    overflow: hidden;
+	}
+	.accordion li:target .acc-content {
+	    height: auto;
+	    padding:10px;
+	}
+	.accordion .acc-header a {
+	    display:block;
+	    padding:5px;
+	    text-decoration: none;
+	    color: #666;
+	    text-shadow:1px 1px 1px #fff;
+	    font-weight:bold;
+	    border-bottom:1px solid #aaa;
+	    background:#eee;
+	    background:-webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ccc));
+	    background:-moz-linear-gradient(#eee, #ccc);
+	    background:-o-linear-gradient(#eee, #ccc);
+	    background:-ms-linear-gradient(#eee, #ccc);
+	    background:linear-gradient(#eee, #ccc);
+	    -webkit-transition:.5s;
+	    -moz-transition:.5s;
+	    -o-transition:.5s;
+	    -ms-transition:.5s;
+	    transition:.5s;
+	}
+	.accordion .acc-header a:hover {
+	    text-decoration:none;
+	    border-bottom:1px solid #ddd;
+	    background:#eee;
+	    background:-webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ddd));
+	    background:-moz-linear-gradient(#eee, #ddd);
+	    background:-o-linear-gradient(#eee, #ddd);
+	    background:-ms-linear-gradient(#eee, #ddd);
+	    background:linear-gradient(#eee, #ddd);
+	    padding-left:15px;
+	}
+	</style>
+  </head>
+  <body>
+    <h1>CSS Accordion</h1>
+	<div class="accordion">
+		<ul>
+		    <li class="acc-header" id="products"> 
+		        <a href="#products">Products</a>
+		        <div class="acc-content">
+			        <p>Nunc lacus tellus, dictum quis vulputate vel, sollicitudin vel lectus. Curabitur sit amet libero neque, molestie laoreet justo. Aenean nulla arcu, consectetur sed venenatis vitae, interdum a quam. Integer at sapien ante. Nulla facilisi. Suspendisse dictum vestibulum faucibus. Nunc sit amet urna quam.</p>
+		        </div>
+		    </li>
+		    <li class="acc-header" id="services"> 
+		        <a href="#services">Services</a>
+		        <div class="acc-content">
+			        <p>In hac habitasse platea dictumst. In malesuada, mauris eu consequat pretium, magna est convallis lorem, vel tincidunt metus urna sollicitudin enim. Vestibulum sit amet lorem tortor. Sed ac lorem dui, sit amet imperdiet augue. Donec eget turpis velit. Nullam nibh eros, iaculis sit amet tincidunt eget, cursus non turpis. Nulla a viverra arcu. In ac massa lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eleifend, orci vel tempus luctus, mauris nibh aliquet arcu, et adipiscing arcu mi id felis. Ut dolor erat, ornare vitae tempus eget, tincidunt in quam. Pellentesque hendrerit sagittis felis, non convallis massa consectetur sed. </p>
+		        </div>
+		    </li>
+		    <li class="acc-header" id="contact"> 
+		        <a href="#contact">Contact Us</a>
+		        <div class="acc-content">
+			        <p>Integer sodales, ligula lacinia scelerisque consequat, enim felis iaculis sapien, faucibus interdum est tellus nec nisi. Praesent ut viverra elit. Proin gravida pretium molestie. Suspendisse potenti. Maecenas a elit ut metus rhoncus porttitor eget sed metus. Vestibulum scelerisque vehicula venenatis. Proin eget orci lorem. </p>
+		        </div>
+		    </li>
+		</ul>
+	</div>
+  </body>
+
+<!-- Mirrored from www.cssportal.com/tryit/index.php?file=blog/accordion by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 22:28:57 GMT -->
+</html></textarea>
+										<script type="text/javascript">
+											var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+												mode: "text/html",
+												tabMode: "indent",
+												styleActiveLine: true,
+												lineNumbers: true,
+												lineWrapping: true
+											});
+										</script>
+									</div>
+			      				</div>
+                            </td>
+                            <td id="right-pane">                               
+                                <div class="outer-wrapper">
+									<div class="output-area">
+                                        <iframe id="view" class="result_output" frameborder="0" name="view" src="javascript:''">Sorry, you need iframes to use Tryit Editor.</iframe>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ad-wrapper">
+                        <div class="ad-box">                         
+<div class="g_top text-center my-3">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- CSS Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1356719463849900"
+     data-ad-slot="5275015068"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>        
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>    
+</body>
+</html>
+

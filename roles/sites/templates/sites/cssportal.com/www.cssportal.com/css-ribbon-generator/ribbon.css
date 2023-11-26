@@ -1,0 +1,146 @@
+﻿.box {
+	width:200px;height:300px;
+	position:relative;
+	border:1px solid #BBB;
+	background:#eee;
+}
+.ribbon {
+	position: absolute;
+	right: -5px; top: -5px;
+	z-index: 1;
+	overflow: hidden;
+	width: 75px; height: 75px; text-align: right;
+}
+.ribbon span {
+	font-size: 10px; font-weight: normal; color: #fff; text-transform: uppercase; text-align: center;
+	font-weight: bold; line-height: 20px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	width: 100px; display: block;
+	background: #79A70A;
+	background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+	box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 19px; right: -21px;
+}
+.ribbon span::before {
+	content: '';
+	position: absolute; left: 0px; top: 100%;
+	z-index: -1;
+	border-left: 3px solid #79A70A;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #79A70A;
+}
+.ribbon span::after {
+	content: '';
+	position: absolute; right: 0%; top: 100%;
+	z-index: -1;
+	border-right: 3px solid #79A70A;
+	border-left: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #79A70A;
+}
+
+.presets {
+	height:40px; width:40px; display:inline-block;cursor:pointer;
+}
+.p1 {
+	background: #79A70A;
+	background: linear-gradient(#9BC90D 0%, #79A70A 100%);	
+}
+.p2 {
+	background: #1e5799;
+	background: linear-gradient(#2989d8 0%, #1e5799 100%);	
+}
+.p3 {
+	background: #8F0808;
+	background: linear-gradient(#F70505 0%, #8F0808 100%);	
+}
+.p4 {
+	background: #808080;
+	background: linear-gradient(#B6BAC9 0%, #808080 100%);	
+}
+.p5 {
+	background: #087F8F;
+	background: linear-gradient(#05EFF7 0%, #087F8F 100%);	
+}
+.p6 {
+	background: #8F5408;
+	background: linear-gradient(#F79E05 0%, #8F5408 100%);	
+}
+
+.switch {
+  position: relative;
+  margin: 0 0 15px 0;
+  height: 26px;
+  width: 120px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 58px;
+  line-height: 26px;
+  font-size: 11px;
+  color: #535353;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.switch-label:active {
+  font-weight: bold;
+}
+
+.switch-label-off {
+  padding-left: 2px;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  /* Note: left: 50% doesn't transition in WebKit */
+  left: 60px;
+}
+
+.switch-selection {
+  background-position: 0% 0%;
+	display: block;
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+    width: 58px;
+    height: 22px;
+    border-radius: 3px;
+    -webkit-transition: left 0.15s ease-out;
+	-moz-transition: left 0.15s ease-out;
+	-o-transition: left 0.15s ease-out;
+	transition: left 0.15s ease-out;
+	background-image: linear-gradient(to bottom, #4fc9ee, #3aa2d0);
+	background-color: #3aa2d0;
+	background-repeat: repeat;
+	background-attachment: scroll;
+}

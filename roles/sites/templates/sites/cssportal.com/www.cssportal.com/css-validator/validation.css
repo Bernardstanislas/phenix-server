@@ -1,0 +1,138 @@
+﻿.msgbox {
+	display:block;
+	text-align:center;
+	font-size:larger;
+	font-weight:bold;
+	border:2px solid maroon;
+	color:white;
+	padding:5px;
+	margin-bottom:10px;
+	background:maroon;
+}
+.options>li:before {display:none;}
+h2.error {
+	font-size:18px;
+	padding:7px;
+	background:#D23D24;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+}
+h2.success {
+	font-size:18px;
+	padding:7px;
+	background:#55B05A;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+}
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  word-wrap: break-word;
+}
+
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.alert .alert-link {
+  font-weight: bold;
+}
+
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+
+.alert > p + p {
+  margin-top: 5px;
+}
+
+.alert-dismissable {
+  padding-right: 35px;
+}
+
+.alert-dismissable .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+
+.alert-success .alert-link {
+  color: #2b542c;
+}
+
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+
+.alert-info .alert-link {
+  color: #245269;
+}
+
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+
+.alert-warning .alert-link {
+  color: #66512c;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+
+.alert-danger .alert-link {
+  color: #843534;
+}
+.nav-tabs { border-bottom: 2px solid #DDD; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #666; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:20px}
+ul.options {
+	list-style-type:none;
+}
+@media (max-width : 768px) {
+	div.data_well{
+		overflow-x:scroll;
+	}
+}
+pre{border:0px;font-family: "Courier New", Courier, monospace; padding:5px}

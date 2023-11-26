@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.cssportal.com/tryit/index.php?file=blog/image-hover-fade by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 22:27:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>CSSPortal Tryit Examples</title>
+	<meta name="description" content="CSSPortal has many examples and resources to learn from. Come on over and check it out!" />
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style/codemirror.css" />
+	<link rel="stylesheet" href="style/custom.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/codemirror.js"></script>
+	<script type="text/javascript" src="js/utility.js"></script>
+	<script src="js/xml.js"></script>    
+	<script src="js/javascript.js"></script>
+	<script src="js/css.js"></script>
+	<script src="js/htmlmixed.js"></script>
+	<script src="js/active-line.js"></script>
+	<script type="text/javascript" src="js/engine.js"></script>
+
+	<style type="text/css">
+		html{overflow:auto;overflow-x:hidden;}
+		.CodeMirror{font-size: 12px; line-height: 16px; font-family:MenschRegular,Menlo,Monaco,consolas,monospace;background: url("img/gutter-bg.gif") repeat-y -26px 0 transparent;}
+		.CodeMirror-activeline-background {background: #e8f2ff !important;}
+		.CodeMirror-scroll{overflow:auto;}
+	</style>
+	</head>
+<body>
+        <table>
+            <tr>
+                <td class="header-wrapper">
+                    <div class="header">
+                        <div class="logo-box">
+                        <div class="navbar-brand-box">
+                            <a href="../index.html" class="logo logo-light">
+                                <span class="logo-lg">
+                                    <img src="../assets/images/cssicon.png" alt="" height="36"> <span class="logo-txt">CSS Portal</span>
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="control-bar">
+                            <div class="top_ad">
+                            <div class="buttons">
+                                <input type="submit" onclick="startit()" value="Edit and Click Me &raquo;" />
+                            </div>                            
+                            </div>
+                        </div>
+                    <div class="clear">&nbsp;</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="frame-box">
+                        <tr>
+                            <td id="left-pane">
+			      				<div class="outer-area">
+                                	<span class="show-right-pane">&nbsp;</span>
+									<div class="inner-area">
+                                		<textarea id="code" name="code"><!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+body {padding:40px}
+.team-fade {
+  width:250px;
+  height:250px;
+  border:1px solid rgba(0, 0, 0, 0.5);
+  overflow: hidden; display: block; position: relative;
+}
+.team-fade .team-box {
+  top: 0px; left: 0px; right: 0px; bottom: 0px; 
+  color: #f2f2f2;
+}
+.team-fade .team-img {
+  z-index: 0;
+}
+.team-fade .team-box {
+  z-index: 1; opacity: 0; background-color: rgba(0, 0, 0, 0.6);
+}
+.team-fade:hover .team-box {
+  opacity: 1;
+}
+.team-box {
+  width: 100%; 
+  height: 100%; 
+  transition:0.4s ease-in-out;
+  display: block;
+  transform: scale(1); 
+  backface-visibility: hidden;
+}
+.team-img img {
+  display: block; 
+  position: relative; 
+  max-height: 100%; 
+  max-width: 100%;
+}
+.team-img {
+  position: relative;
+}
+.team-box {
+  top: 0px; left: 0px; 
+  position: absolute;
+}
+.team-box .team-content {
+  padding: 5px; 
+  top: 50%; left: 50%; 
+  float: left; 
+  display: block; 
+  position: relative; 
+  transform: translateX(-50%) translateY(-50%);
+}
+.team-content {
+  text-align: center;
+}
+.team-content p {
+  font-size: 14px;
+}
+.team-content .social-icons a {
+  padding: 5px;
+  display:inline-block;
+}
+.team-content .social-icons img {
+  width:24px;
+  height:24px;
+}
+hr {
+  border: 0; 
+  height: 0;
+  width:80%;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.round-team, .round-team .team-img, .round-team .team-box, .round-team .team-content, .round-team img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+    </style>
+  </head>
+  <body>
+	<h2>Image Hover Fade in Effect</h2>
+	<div class="team-fade">
+	  <div class="team-img"><img alt="Team Member" src="images/team-2.jpg"></div>
+	  <div class="team-box">
+		<div class="team-content">
+		  <h3>John Doe</h3>
+		  <hr>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum sem vel odio consequat molestie. Duis et ex bibendum.</p>
+		  <hr>
+		  <div class="social-icons">
+			<a href="#" target="_blank"><img alt="Facebook" src="images/facebook.png"/></a>
+			<a href="#" target="_blank"><img alt="Twitter" src="images/twitter1.png"/></a>
+			<a href="#" target="_blank"><img alt="Google+" src="images/google.png"/></a>
+			<a href="#" target="_blank"><img alt="Pinterest" src="images/pinterest.png"/></a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="team-fade round-team">
+	  <div class="team-img"><img alt="Team Member" src="images/team-2.jpg"></div>
+	  <div class="team-box">
+		<div class="team-content">
+		  <h3>John Doe</h3>
+		  <hr>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum sem vel odio consequat molestie. Duis et ex bibendum.</p>
+		  <hr>
+		  <div class="social-icons">
+			<a href="#" target="_blank"><img alt="Facebook" src="images/facebook.png"/></a>
+			<a href="#" target="_blank"><img alt="Twitter" src="images/twitter1.png"/></a>
+			<a href="#" target="_blank"><img alt="Google+" src="images/google.png"/></a>
+			<a href="#" target="_blank"><img alt="Pinterest" src="images/pinterest.png"/></a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </body>
+
+<!-- Mirrored from www.cssportal.com/tryit/index.php?file=blog/image-hover-fade by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2023 22:27:30 GMT -->
+</html></textarea>
+										<script type="text/javascript">
+											var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+												mode: "text/html",
+												tabMode: "indent",
+												styleActiveLine: true,
+												lineNumbers: true,
+												lineWrapping: true
+											});
+										</script>
+									</div>
+			      				</div>
+                            </td>
+                            <td id="right-pane">                               
+                                <div class="outer-wrapper">
+									<div class="output-area">
+                                        <iframe id="view" class="result_output" frameborder="0" name="view" src="javascript:''">Sorry, you need iframes to use Tryit Editor.</iframe>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ad-wrapper">
+                        <div class="ad-box">                         
+<div class="g_top text-center my-3">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- CSS Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1356719463849900"
+     data-ad-slot="5275015068"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>        
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>    
+</body>
+</html>
+
