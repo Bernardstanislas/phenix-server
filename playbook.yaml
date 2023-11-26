@@ -21,6 +21,9 @@
       tags:
         - webserver
         - ssl
+    - role: epoptes
+      tags:
+        - light-client
     - name: chroot
       tags:
         - light-client
@@ -41,9 +44,6 @@
     - role: mysql-server
       tags:
         - webserver
-    - role: epoptes
-      tags:
-        - light-client
     - role: postfix
       tags:
         - mail
