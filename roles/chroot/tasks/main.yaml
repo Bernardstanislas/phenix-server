@@ -17,7 +17,7 @@
     creates: /srv/ltsp/jammy/etc/lsb-release
 
 - name: Execute chroot ansible playbook
-  command: ansible-playbook -i chroot_inventory playbook-chroot.yaml
+  command: "ansible-playbook -i chroot_inventory --tags {{ ansible_run_tags | join(',') }} playbook-chroot.yaml"
   args:
     chdir: "{{ provisioning_path }}"
   register: chroot_playbook

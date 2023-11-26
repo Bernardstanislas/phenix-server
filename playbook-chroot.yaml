@@ -2,10 +2,22 @@
   hosts: chroot
   become: yes
   roles:
-    - linux-kernel
-    - hostname
+    - role: linux-kernel
+      tags:
+        - lite
+    - role: hostname
+      tags:
+        - lite
     - ssl
-    - ltsp
-    - desktop
-    - dev-tools
-    - epoptes
+    - role: ltsp
+      tags:
+        - lite
+    - role: desktop
+      tags:
+        - desktop
+    - role: dev-tools
+      tags:
+        - dev-tools
+    - role: epoptes
+      tags:
+        - epoptes

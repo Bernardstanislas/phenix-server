@@ -2,21 +2,32 @@
   hosts: server
   become: yes
   roles:
-    - geerlingguy.security
-    - geerlingguy.docker
-    - desktop
+    - role: geerlingguy.security
+      tags:
+        - security
+    - role: geerlingguy.docker
+      tags:
+        - docker
+    - role: desktop
+      tags:
+        - desktop
     - role: netplan
       tags:
         - netplan
+        - lite
     - role: users
       tags:
         - users
+        - lite
     - name: ansible
       tags:
         - light-client
+        - lite
+        - always
     - name: ltsp
       tags:
         - ltsp
+        - lite
     - name: ssl
       tags:
         - webserver
@@ -24,20 +35,26 @@
     - role: epoptes
       tags:
         - light-client
+        - lite
     - name: chroot
       tags:
         - light-client
+        - lite
+        - always
     - role: configure-ltsp
       tags:
         - configure-ltsp
         - ltsp
+        - lite
     - role: dnsmasq
       tags:
         - webserver
         - dhcp
+        - lite
     - role: nfs
       tags:
         - nfs
+        - lite
     - role: nginx
       tags:
         - webserver
@@ -51,6 +68,8 @@
       tags:
         - gitlab
     - role: dev-tools
+      tags:
+        - dev-tools
     - role: certificates-in-browsers
       tags:
         - ssl
