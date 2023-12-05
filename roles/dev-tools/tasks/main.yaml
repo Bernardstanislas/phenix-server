@@ -103,6 +103,9 @@
       - sublime-text
       - typora
       - tableplus
+      - terminator
+  tags:
+    - desktop
 
 - name: Install dev tools
   apt:
@@ -114,7 +117,6 @@
       - btop
       - logrotate
       - mysql-client
-      - terminator
     install_recommends: no
 
 - name: Install lazygit
