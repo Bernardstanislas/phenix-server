@@ -29,6 +29,8 @@
         dest: /etc/apt/apt.conf.d/51unattended-upgrades-firefox
   notify:
     - Update apt cache
+  tags:
+    - desktop
 
 - name: Add the Google Chrome repository
   block:
@@ -38,6 +40,8 @@
     - apt_repository:
         repo: deb [arch=amd64 signed-by=/etc/apt/keyrings/chrome.asc] http://dl.google.com/linux/chrome/deb/ stable main
         filename: google-chrome
+  tags:
+    - desktop
 
 - name: Add the Microsoft repository
   block:
@@ -47,10 +51,14 @@
     - apt_repository:
         repo: deb [arch=amd64 signed-by=/etc/apt/keyrings/microsoft.asc] https://packages.microsoft.com/repos/code stable main
         filename: vscode
+  tags:
+    - desktop
 
 - name: Add the Inkscape PPA repository
   apt_repository:
     repo: ppa:inkscape.dev/stable
+  tags:
+    - desktop
 
 - name: Add the Sublime text repository
   block:
@@ -60,6 +68,8 @@
     - apt_repository:
         repo: deb [arch=amd64 signed-by=/etc/apt/keyrings/sublime.asc] https://download.sublimetext.com/ apt/stable/
         filename: sublime-text
+  tags:
+    - desktop
 
 - name: Add the Typora repository
   block:
@@ -69,6 +79,8 @@
     - apt_repository:
         repo: deb [arch=amd64 signed-by=/etc/apt/keyrings/typora.asc] https://typora.io/linux ./
         filename: typora
+  tags:
+    - desktop
 
 - name: Add Yarn repository
   block:
@@ -88,6 +100,8 @@
     - name: Add the TablePlus repository
       apt_repository:
         repo: deb [arch=amd64 signed-by=/etc/apt/keyrings/tableplus.asc] https://deb.tableplus.com/debian/22 tableplus main
+  tags:
+    - desktop
 
 - name: Install graphical apps
   apt:
