@@ -16,6 +16,18 @@
   args:
     creates: /srv/ltsp/jammy/etc/lsb-release
 
+- name: Do the mounts into chroot
+  mount:
+    path: "/srv/ltsp/jammy{{ item }}"
+    src: "{{ item }}"
+    fstype: none
+    opts: bind
+    state: mounted
+  loop:
+    - /dev
+    - /proc
+    - /sys
+
 - name: Execute chroot ansible playbook
   command: "ansible-playbook -i chroot_inventory --tags {{ ansible_run_tags | join(',') }} playbook-chroot.yaml"
   args:
