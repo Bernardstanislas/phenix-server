@@ -29,7 +29,7 @@
     - /sys
 
 - name: Execute chroot ansible playbook
-  command: "ansible-playbook -i chroot_inventory --tags {{ ansible_run_tags | join(',') }} playbook-chroot.yaml"
+  command: "ansible-playbook -i chroot_inventory --tags {{ ansible_run_tags | join(',') }} --skip-tags {{ ansible_skip_tags | join(',') }} playbook-chroot.yaml"
   args:
     chdir: "{{ provisioning_path }}"
   register: chroot_playbook
