@@ -1,0 +1,2 @@
+admin: {{ ansible_user }}
+gitlab: {{ ansible_user }}

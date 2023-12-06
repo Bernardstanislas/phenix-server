@@ -1,5 +1,0 @@
-{% for user in all_users %}
-{{ user }}: {{ user }}
-{% endfor %}
-admin: {{ ansible_user }}
-gitlab: {{ ansible_user }}

@@ -61,7 +61,7 @@
     - role: mysql-server
       tags:
         - webserver
-    - role: postfix
+    - role: mail
       tags:
         - mail
     - role: gitlab
