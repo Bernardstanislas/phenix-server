@@ -47,3 +47,15 @@
       loop: "{{ all_users }}"
       loop_control:
         loop_var: user
+
+- name: Install Neomutt
+  apt:
+    name: neomutt
+
+- name: Configure Neomutt
+  template:
+    src: neomuttrc
+    dest: /etc/neomuttrc
+    owner: root
+    group: root
+    mode: 0644
