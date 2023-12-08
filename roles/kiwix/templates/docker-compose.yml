@@ -7,3 +7,4 @@ services:
     ports:
       - '{{ kiwix_serve_port }}:8080'
     command: "*.zim"
+    restart: on-failure
