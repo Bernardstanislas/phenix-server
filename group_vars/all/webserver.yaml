@@ -1,2 +1,6 @@
 ---
 domain: codephoenix.com
+
+proxied_services:
+  - domain: kiwix
+    port: "{{ kiwix_serve_port }}"

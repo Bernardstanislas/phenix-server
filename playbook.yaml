@@ -57,6 +57,7 @@
         - lite
     - role: nginx
       tags:
+        - nginx
         - webserver
     - role: mysql-server
       tags:

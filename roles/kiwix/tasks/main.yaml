@@ -21,16 +21,5 @@
     mode: 0644
   notify: Restart Kiwix
 
-- name: Configure Nginx
-  template:
-    src: kiwix.conf
-    dest: /etc/nginx/sites-enabled/kiwix.conf
-  notify: Restart nginx
-
-- name: Add Kiwix to the /etc/hosts file
-  lineinfile:
-    path: /etc/hosts
-    line: "{{ intranet_ip }} kiwix.{{ domain}}"
-
 - name: Start the Kiwix server
   command: docker compose -f /home/{{ ansible_user }}/docker-compose-kiwix.yml up -d
