@@ -3,4 +3,4 @@ root_ca_certificate:
   name: CodePhoenix
   path: /usr/local/share/ca-certificates/server.crt
 
-apt_ssl_verify: true
+ssl_verify: true
