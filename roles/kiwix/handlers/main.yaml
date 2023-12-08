@@ -1,0 +1,3 @@
+---
+- name: Restart Kiwix
+  command: docker compose -f /home/{{ ansible_user }}/docker-compose-kiwix.yml restart

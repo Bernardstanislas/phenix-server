@@ -1,0 +1,36 @@
+---
+- name: Create the Zim directory
+  file:
+    path: "{{ kiwix_zim_dir }}"
+    state: directory
+
+- name: Downlowd the Zim files
+  get_url:
+    url: "{{ item }}"
+    dest: "{{ kiwix_zim_dir }}/{{ item | basename }}"
+    validate_certs: "{{ ssl_verify }}"
+  with_items: "{{ kiwix_zim_files }}"
+  notify: Restart Kiwix
+
+- name: Create the docker-compose.yml
+  template:
+    src: docker-compose.yml
+    dest: "/home/{{ ansible_user }}/docker-compose-kiwix.yml"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: 0644
+  notify: Restart Kiwix
+
+- name: Configure Nginx
+  template:
+    src: kiwix.conf
+    dest: /etc/nginx/sites-enabled/kiwix.conf
+  notify: Restart nginx
+
+- name: Add Kiwix to the /etc/hosts file
+  lineinfile:
+    path: /etc/hosts
+    line: "{{ intranet_ip }} kiwix.{{ domain}}"
+
+- name: Start the Kiwix server
+  command: docker compose -f /home/{{ ansible_user }}/docker-compose-kiwix.yml up -d

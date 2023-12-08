@@ -1,0 +1,5 @@
+---
+kiwix_zim_dir: "/var/www/kiwix/zim"
+kiwix_zim_files:
+  - https://download.kiwix.org/zim/wikipedia/wikipedia_en_ray_charles_nopic_2023-11.zim
+kiwix_serve_port: 8090

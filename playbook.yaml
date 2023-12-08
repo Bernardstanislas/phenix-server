@@ -73,3 +73,6 @@
     - role: certificates-in-browsers
       tags:
         - ssl
+    - role: kiwix
+      tags:
+        - kiwix
