@@ -1,0 +1,39 @@
+---
+- name: Create the docker-compose.yml
+  template:
+    src: docker-compose.yml
+    dest: "/home/{{ ansible_user }}/docker-compose-verdaccio.yml"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: 0644
+  notify: Restart Verdaccio
+
+- name: Create the Verdaccio directories
+  file:
+    path: "{{ verdaccio_directory }}/{{ item }}"
+    state: directory
+    owner: 10001
+    group: 10001
+    mode: 0755
+  loop:
+    - conf
+    - storage
+
+- name: Create the Verdaccio config file
+  template:
+    src: config.yaml
+    dest: "{{ verdaccio_directory }}/conf/config.yaml"
+    owner: 10001
+    group: 10001
+    mode: 0644
+
+- name: Configure globally NPM
+  template:
+    src: npmrc
+    dest: /usr/local/etc/npmrc
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Start the Verdaccio server
+  command: docker compose -f /home/{{ ansible_user }}/docker-compose-verdaccio.yml up -d

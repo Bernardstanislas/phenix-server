@@ -1,0 +1,10 @@
+version: '3'
+services:
+  verdaccio:
+    image: verdaccio/verdaccio
+    ports:
+      - '{{ verdaccio_port }}:4873'
+    volumes:
+      - '{{ verdaccio_directory }}/conf:/verdaccio/conf'
+      - '{{ verdaccio_directory }}/storage:/verdaccio/storage'
+    restart: on-failure

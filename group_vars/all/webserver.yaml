@@ -4,3 +4,5 @@ domain: codephoenix.com
 proxied_services:
   - domain: kiwix
     port: "{{ kiwix_serve_port }}"
+  - domain: npm
+    port: "{{ verdaccio_port }}"

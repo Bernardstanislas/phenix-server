@@ -1,0 +1,3 @@
+registry=https://npm.{{ domain }}/
+ca-file=/etc/ssl/certs/ca-certificate.pem
+strict-ssl={{ ssl_verify | lower }}

@@ -77,3 +77,6 @@
     - role: kiwix
       tags:
         - kiwix
+    - role: npm-registry
+      tags:
+        - npm-registry
