@@ -1,8 +1,21 @@
 ---
+- name: Create the dev group
+  group:
+    name: dev
+    state: present
+
 - name: Create the student users
   user:
     name: "{{ student }}"
     shell: /bin/bash
+    groups: dev
+    append: yes
   loop: "{{ students }}"
   loop_control:
     loop_var: student
+
+- name: Add the ansible user to the dev group
+  user:
+    name: "{{ ansible_user }}"
+    groups: dev
+    append: yes
