@@ -80,3 +80,6 @@
     - role: npm-registry
       tags:
         - npm-registry
+    - role: nodejs
+      tags:
+        - nodejs

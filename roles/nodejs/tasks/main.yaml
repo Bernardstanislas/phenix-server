@@ -1,0 +1,21 @@
+---
+- name: Download n-install script
+  get_url:
+    url: https://bit.ly/n-install
+    dest: /tmp/n-install
+    mode: 0755
+    validate_certs: "{{ ssl_verify }}"
+
+- name: Install n
+  get_url:
+    url: https://raw.githubusercontent.com/visionmedia/n/master/bin/n
+    dest: /usr/local/bin/n
+    mode: 0755
+
+- name: Install Node.js
+  command: "/usr/local/bin/n {{ item }}"
+  loop:
+    - 14
+    - 16
+    - 18
+    - 20
