@@ -4,3 +4,4 @@ ansible_user: codephenix
 provisioning_path: /home/{{ ansible_user }}/.provisioning
 
 in_chroot: "{{ ansible_connection == 'chroot' }}"
+ansible_common_remote_group: dev

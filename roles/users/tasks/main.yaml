@@ -1,14 +1,14 @@
 ---
 - name: Create the dev group
   group:
-    name: dev
+    name: "{{ ansible_common_remote_group }}"
     state: present
 
 - name: Create the student users
   user:
     name: "{{ student }}"
     shell: /bin/bash
-    groups: dev
+    groups: "{{ ansible_common_remote_group }}"
     append: yes
   loop: "{{ students }}"
   loop_control:
@@ -17,5 +17,5 @@
 - name: Add the ansible user to the dev group
   user:
     name: "{{ ansible_user }}"
-    groups: dev
+    groups: "{{ ansible_common_remote_group }}"
     append: yes
