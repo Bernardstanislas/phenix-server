@@ -16,6 +16,8 @@ ansible-galaxy install -r requirements.yaml
 
 # Usage
 
+## Server installation
+
 Install the server from the Ubuntu Server 22.04 iso.
 
 Choose regular Ubuntu server over minimized version.
@@ -28,17 +30,53 @@ Define a user during the installation wizard, report the username in the `group_
 
 Do not choose any additional software to be installed.
 
-Launch the installation.
+Launch and finish the installation.
 
-Once the installation is done and you have successfully rebooted, you need to setup few variables before running the playbook.
+## Network configuration
+
+Depending on your use case, you might need to configure the network differently.
+
+Network is configured with Netplan, with configuration files located in `/etc/netplan/`.
+
+For the light clients to be able to boot from the server, you need to configure the server with a static IP address on the network where the light clients will be.
+
+You can use the following configuration as a base:
+
+```yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+      dhcp4: false
+      dhcp6: false
+      addresses:
+        - 192.168.67.1/24
+  wifis:
+    wlp2s0:
+      dhcp4: true
+       access-points:
+        "my-wifi":
+          password: "my-password"
+```
+
+`192.168.67.1` is the default LTSP server IP address, you can change it if you want in the `group_vars/all/network.yaml` file.
+
+If you make any change to this file and you don't want these changes to be further committed, you can ignore further modifications to this file:
+
+```bash
+git update-index --assume-unchanged group_vars/all/network.yaml
+```
+
+## Provisioning configuration
+
+Now that the network is correctly configured, you need to configure the provisioning.
 
 Log in the server, and get the network configuration with `ip addr`:
 - report the server ip address in the `inventory` file
-- fill the `group_vars/all/network.yaml` file
+- ignore further modifications to this file: `git update-index --assume-unchanged inventory`
 
-You can ignore further modifications to these two files:
-- `git update-index --skip-worktree inventory`
-- `git update-index --skip-worktree group_vars/all/network.yaml`
+## Actual provisioning
 
 The machine is now ready to be provisioned, you can now run from the host machine:
 

@@ -41,4 +41,4 @@
 - name: Add gitlab to the /etc/hosts file
   lineinfile:
     path: /etc/hosts
-    line: "{{ intranet_ip }} gitlab.{{ domain}}"
+    line: "{{ intranet_ip }}  gitlab.{{ domain}}"
