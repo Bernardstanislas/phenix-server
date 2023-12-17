@@ -1,4 +1,10 @@
 ---
+- name: Unmask systemd-resolved
+  systemd:
+    name: systemd-resolved
+    state: restarted
+    masked: no
+
 - name: Configure resolved.conf
   template:
     src: resolved.conf
