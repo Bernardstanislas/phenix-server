@@ -2,7 +2,7 @@
   <img src="images/banner.png" width="600" />
 </p>
 
-Provisioning for the CodePhoenix server.
+Provisioning for the CodePhenix server.
 
 # Prerequisites
 

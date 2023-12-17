@@ -1,6 +1,6 @@
 ---
 root_ca_certificate:
-  name: CodePhoenix
+  name: CodePhenix
   path: /usr/local/share/ca-certificates/server.crt
 
 ssl_verify: true
