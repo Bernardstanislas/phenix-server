@@ -18,7 +18,7 @@ ansible-galaxy install -r requirements.yaml
 
 Install the server from the Ubuntu Server 22.04 iso.
 
-Choose regualar Ubuntu server over minimized version.
+Choose regular Ubuntu server over minimized version.
 
 Check "Install OpenSSH server", and add a SSH identity from your Github handle.
 
