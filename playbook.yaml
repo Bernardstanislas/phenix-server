@@ -11,10 +11,6 @@
     - role: desktop
       tags:
         - desktop
-    - role: netplan
-      tags:
-        - netplan
-        - lite
     - role: users
       tags:
         - users
